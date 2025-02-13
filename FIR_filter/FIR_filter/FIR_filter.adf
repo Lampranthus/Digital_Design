@@ -1,0 +1,51 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=FIR_filter
+[Library]
+FIR_filter=.\FIR_filter\FIR_filter.lib
+[$LibMap$]
+FIR_filter=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\Lampranthus\Documents\Maestría\Segundo Semestre\Diseño Digital\Active-HDL-main\Active-HDL-main\Sequential\Counter
+[Files]
+/FIR_filter.vhd=-1
+/MAC.vhd=-1
+/multiplicador_n.vhd=-1
+/registro_paralelo_rac.vhd=-1
+/registro_paralelo_rr.vhd=-1
+/Sumador_n.vhd=-1
+/registro_paralelo_reg.vhd=-1
+/mux_5a1_n.vhd=-1
+/LUT.vhd=-1
+/fsm_MAC_4.vhd=-1
+/MAC_4.vhd=-1
+/contador_cdhb_n.vhd=-1
+/FSM_MAC.vhd=-1
+[Files.Data]
+.\src\FIR_filter.vhd=VHDL Source Code
+.\src\MAC.vhd=VHDL Source Code
+.\src\multiplicador_n.vhd=VHDL Source Code
+.\src\registro_paralelo_rac.vhd=VHDL Source Code
+.\src\registro_paralelo_rr.vhd=VHDL Source Code
+.\src\Sumador_n.vhd=VHDL Source Code
+.\src\registro_paralelo_reg.vhd=VHDL Source Code
+.\src\mux_5a1_n.vhd=VHDL Source Code
+.\src\LUT.vhd=VHDL Source Code
+.\src\fsm_MAC_4.vhd=VHDL Source Code
+.\src\MAC_4.vhd=VHDL Source Code
+.\src\contador_cdhb_n.vhd=VHDL Source Code
+.\src\FSM_MAC.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=mac_4|fsm|0
+ShowHide=ShowTopLevel
+Selected=

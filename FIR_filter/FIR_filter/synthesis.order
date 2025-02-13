@@ -1,0 +1,13 @@
+i<>.\src\fsm_MAC_4.vhd
+i<>.\src\LUT.vhd
+i<>.\src\MAC_4.vhd
+i<>.\src\multiplicador_n.vhd
+i<>.\src\mux_5a1_n.vhd
+i<>.\src\registro_paralelo_rac.vhd
+i<>.\src\registro_paralelo_reg.vhd
+i<>.\src\registro_paralelo_rr.vhd
+i<>.\src\Sumador_n.vhd
+i<>.\src\FIR_filter.vhd
+i<>.\src\MAC.vhd
+i<>.\src\contador_adhb_n.vhd
+i<>.\src\FSM_MAC.vhd

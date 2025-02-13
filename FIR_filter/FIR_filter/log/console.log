@@ -1,0 +1,279 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ULM: Warning: ULM_0021 Architecture "simple" of entity "fir_filter.contador_adhb_n" is not up-to-date. Please recompile file "C:/Users/Lampranthus/Documents/Maestría/Segundo Semestre/Diseño Digital/FIR_filter/FIR_filter/FIR_filter/src/contador_adhb_n.vhd".
+# ELBREAD: Error: Architecture 'simple' of entity 'contador_adhb_n' not found in library 'fir_filter'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0264: contador_cdhb_n.vhd : (23, 16): Signal "Q" in the sensitivity list must denote a signal that can be read.
+# Error: COMP96_0393: contador_cdhb_n.vhd : (26, 23): Cannot read output : "Q".
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0078: contador_cdhb_n.vhd : (23, 23): Unknown identifier "Qs".
+# Error: COMP96_0348: contador_cdhb_n.vhd : (23, 23): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (26, 23): Unknown identifier "Qs".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (26, 23): Cannot find object declaration.
+# Error: COMP96_0077: contador_cdhb_n.vhd : (26, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0078: contador_cdhb_n.vhd : (23, 23): Unknown identifier "Qs".
+# Error: COMP96_0348: contador_cdhb_n.vhd : (23, 23): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (26, 23): Unknown identifier "Qs".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (26, 23): Cannot find object declaration.
+# Error: COMP96_0077: contador_cdhb_n.vhd : (26, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0078: contador_cdhb_n.vhd : (23, 23): Unknown identifier "Qs".
+# Error: COMP96_0348: contador_cdhb_n.vhd : (23, 23): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (26, 23): Unknown identifier "Qs".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (26, 23): Cannot find object declaration.
+# Error: COMP96_0077: contador_cdhb_n.vhd : (26, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_adhb_n"
+# Error: COMP96_0078: contador_cdhb_n.vhd : (23, 23): Unknown identifier "Qs".
+# Error: COMP96_0348: contador_cdhb_n.vhd : (23, 23): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (26, 23): Unknown identifier "Qs".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (26, 23): Cannot find object declaration.
+# Error: COMP96_0077: contador_cdhb_n.vhd : (26, 23): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: contador_cdhb_n.vhd : (38, 3): Unknown identifier "I".
+# Error: COMP96_0133: contador_cdhb_n.vhd : (38, 3): Cannot find object declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FIR_filter -2002  $dsn/src/contador_cdhb_n.vhd
+# Compile Entity "contador_cdhb_n"
+# Compile Architecture "simple" of Entity "contador_cdhb_n"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
