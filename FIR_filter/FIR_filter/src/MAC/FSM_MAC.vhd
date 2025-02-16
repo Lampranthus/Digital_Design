@@ -34,7 +34,7 @@ begin
 		OPC <= "01";	--carga
 
 		
-		EOP <= '1';		--fin
+		EOP <= '0';		--no fin
 		
 		if(fs='1') then
 			qn <= "01";
@@ -64,13 +64,14 @@ begin
 		RAC <= '0';		--mantiene
 		RR	<= '1';		--guarda
 		OPC <= "01";	--carga
-
 		
-		EOP <= '0';		--no fin
+		EOP <= '1';		--fin
 		
-		qn <= "00";	    --regresa a s0
-		
-		
+		if(fs='1') then
+			qn <= "01";
+		else
+			qn <= "00";	    --regresa a s0
+		end if;
 		
 		end case;
 		

@@ -19,13 +19,14 @@ FAMILY=
 fileopenfolder=C:\Users\Lampranthus\Documents\Maestría\Segundo Semestre\Diseño Digital\Active-HDL-main\Active-HDL-main\Sequential\Counter
 [Files]
 /FIR_filter.vhd=-1
-/registro_paralelo_reg.vhd=-1
+/registro_paralelo.vhd=-1
 /mux_5a1_n.vhd=-1
 /LUT.vhd=-1
-/fsm_MAC_4.vhd=-1
-/MAC_4.vhd=-1
-/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.asdb=-1
-/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.awc=-1
+/fsm_FIR.vhd=-1
+/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\FIR_simulation.asdb=-1
+/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\FIR_simulation.awc=-1
+MAC/..\..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.asdb=-1
+MAC/..\..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.awc=-1
 MAC/MAC.vhd=-1
 MAC/FSM_MAC.vhd=-1
 MAC/contador_cdhb_n.vhd=-1
@@ -35,11 +36,12 @@ MAC/sumador_n.vhd=-1
 MAC/multiplicador_n_m.vhd=-1
 [Files.Data]
 .\src\FIR_filter.vhd=VHDL Source Code
-.\src\registro_paralelo_reg.vhd=VHDL Source Code
+.\src\registro_paralelo.vhd=VHDL Source Code
 .\src\mux_5a1_n.vhd=VHDL Source Code
 .\src\LUT.vhd=VHDL Source Code
-.\src\fsm_MAC_4.vhd=VHDL Source Code
-.\src\MAC_4.vhd=VHDL Source Code
+.\src\fsm_FIR.vhd=VHDL Source Code
+.\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\FIR_simulation.asdb=Accelerated Waveform File
+.\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\FIR_simulation.awc=Accelerated Waveform Configuration
 .\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.asdb=Accelerated Waveform File
 .\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\MAC_simul.awc=Accelerated Waveform Configuration
 .\src\MAC\MAC.vhd=VHDL Source Code
@@ -50,7 +52,7 @@ MAC/multiplicador_n_m.vhd=-1
 .\src\MAC\sumador_n.vhd=VHDL Source Code
 .\src\MAC\multiplicador_n_m.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=mac_4|fsm|0
+HierarchyInformation=fir_filter|fsm|0 mac|bloques|0
 ShowHide=ShowTopLevel
 Selected=
 [Groups]

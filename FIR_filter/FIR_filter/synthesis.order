@@ -1,6 +1,5 @@
 i<>.\src\fsm_MAC_4.vhd
 i<>.\src\LUT.vhd
-i<>.\src\MAC_4.vhd
 i<>.\src\multiplicador_n.vhd
 i<>.\src\mux_5a1_n.vhd
 i<>.\src\registro_paralelo_rac.vhd
