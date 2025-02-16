@@ -3,17 +3,18 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
-entity Sumador_n is
+entity sumador_n is
 	generic(
-	n : integer :=38
+	n : integer :=60
 	);
 	port(
-	A,B :	in std_logic_vector(n-1 downto 0);
-	S	:	out std_logic_vector(n-1 downto 0)
+	A :	in std_logic_vector(n-1 downto 0);
+	B :	in std_logic_vector(n-1 downto 0);
+	S :	out std_logic_vector(n-1 downto 0)
 	);
-end Sumador_n;
+end sumador_n;
 
-architecture aritmetica of Sumador_n is
+architecture aritmetica of sumador_n is
 begin
 
 	process(A,B)
