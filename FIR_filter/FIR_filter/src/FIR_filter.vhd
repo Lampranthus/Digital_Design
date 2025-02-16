@@ -8,7 +8,7 @@ entity FIR_filter is
 	CLK : in std_logic;
 	STF : in std_logic;
 	X	: in std_logic_vector(17 downto 0);
-	RDY : out std_logic;
+	EOP : out std_logic;
 	Y   : out std_logic_vector(17 downto 0)	
 	);	
 	
@@ -77,26 +77,12 @@ component registro_paralelo is
 		Qout : out std_logic_vector(n-1 downto 0)	
 	);
 		
-end component;
-
---------------------------------------------------------------------------------------
-
-component fsm_FIR is
-	port(	
-		RST : in std_logic;
-		CLK : in std_logic;
-		STF : in std_logic;
-		EOP : in std_logic;
-		REG : out std_logic;
-		RDY : out std_logic		
-	);
-	
 end component; 
 
 --------------------------------------------------------------------------------------
 
 
-signal EOF,LDR : std_logic; 
+signal EOF : std_logic; 
 signal M,X1,X2,X3,X4 : std_logic_vector(17 downto 0); 
 signal N,I : std_logic_vector(5 downto 0); 
 signal A : std_logic_vector(35 downto 0); 
@@ -104,6 +90,7 @@ signal A : std_logic_vector(35 downto 0);
 begin 
 	
 	N <= "000100";
+	EOP <= EOF;
 	
 	sc0 :  mux_5a1_n port map(X,X1,X2,X3,X4,I,M);
 	sc1	:  LUT port map(I,A);
@@ -112,6 +99,5 @@ begin
 	sc4 :  registro_paralelo port map(RST,CLK,X1,EOF,X2);
 	sc5 :  registro_paralelo port map(RST,CLK,X2,EOF,X3);
 	sc6 :  registro_paralelo port map(RST,CLK,X3,EOF,X4);
-	sc7 :  fsm_FIR port map(RST,CLK,STF,EOF,LDR,RDY);
 	
 end fsm;

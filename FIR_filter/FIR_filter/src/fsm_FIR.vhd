@@ -14,7 +14,7 @@ end fsm_FIR;
 
 architecture fsm of fsm_FIR is	
 
-signal qp, qn : std_logic_vector(1 downto 0); 
+signal qp, qn : std_logic; 
 
 begin  
 	
@@ -24,13 +24,13 @@ begin
 		case(qp) is
 		
 		--s0--
-		when "00" =>
+		when '0' =>
 		
 		REG <= '0'; 
 		RDY <= '1'; 
 		
 		if (STF='1') then
-			Qn <= "01"; 
+			Qn <= '1'; 
 		else 
 			Qn <= Qp; 
 		end if;
@@ -42,18 +42,10 @@ begin
 		RDY <= '0'; 
 		
 		if (EOP='1') then
-			Qn <= "00"; 
+			Qn <= '0'; 
 		else 
 			Qn <= Qp; 
 		end if;
-		
-		--s2--
-		--when others => 
-		
-		--REG <= '1'; 
-		--RDY <= '0'; 
-		
-		--Qn <= "00"; 
 		
 		end case;
 		
@@ -62,7 +54,7 @@ begin
 	secuencial : process(RST,CLK)
 	begin
 		if(RST='0') then
-			qp <= (others => '0');
+			qp <= '0';
 		elsif(CLK'event and CLK='1') then
 			qp <= qn;
 		end if;
