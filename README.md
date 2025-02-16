@@ -1,4 +1,4 @@
-# Filtro FIIR de 4 orden VHDL
+# Filtro FIR de 4 orden VHDL
 
 Tomé el ejemplo del filtro FIR que vienen el el libro de electronica digital y logica programable de Troncoso.
 Edité el diseño para hacerlo más optimizado ahorrando un par de ciclos de reloj.
