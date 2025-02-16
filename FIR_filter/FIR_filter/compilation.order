@@ -2,7 +2,6 @@
 .\src\registro_paralelo.vhd
 .\src\mux_5a1_n.vhd
 .\src\LUT.vhd
-.\src\fsm_FIR.vhd
 .\src\MAC\MAC.vhd
 .\src\MAC\FSM_MAC.vhd
 .\src\MAC\contador_cdhb_n.vhd
