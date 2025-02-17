@@ -39,4 +39,9 @@ Ahora que ya qued[o un poco mas claro como se va a implementar el filtro necesit
 
 en la version 1.2 traté de hacer que la mistitplicacion sea de 11 x 13 bits el bit extra de la entrada es para que simule el signo del valor de 10 bits al gunal que el nuevo bit de voeficiente, solo lo probé en el mac y parece que funciona bien, quedando a la salida los 12 bits que iran al dac, la prueba lo hice con punto flotante 2.9 para la entrada y 2.11 para la salida los coeficientes los tengo como la unidad.
 
+![image](https://github.com/user-attachments/assets/0e1976b9-9b6e-4bed-83af-b5c08843dd82)
+
+el filtro con coeficientes 1 hace lo que debería de hacer. ahora falta agregar las partes del control del adc y del dac. para luego hacer una prueba fisica con esos coeficientes y porteriormente encontrar coefienstes para hacer que el filtro sea funcional. aun no se que clase de filtro será solo estpy trabaando en el firmware y la implementacion en fisico.
+
+
  
