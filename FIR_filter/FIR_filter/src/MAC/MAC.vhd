@@ -15,8 +15,7 @@ port(
 	C : in std_logic_vector(5 downto 0); 	
 	EOF : out std_logic; 
 	I : out std_logic_vector(5 downto 0);
-	--S : in integer := 0;
-	Y : out std_logic_vector(11 downto 0)	--12 bits
+	Y : out std_logic_vector(11 downto 0)
 ); 
 end MAC; 
  

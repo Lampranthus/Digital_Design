@@ -34,7 +34,7 @@ end component;
 component LUT is
 port (
     F	:	in std_logic_vector(5 downto 0);
-    A	: 	out std_logic_vector(11 downto 0)
+    A	: 	out std_logic_vector(12 downto 0)
     ); 		
 end component; 
 
@@ -42,22 +42,19 @@ end component;
 
 component MAC is
 generic(
-	n : integer := 10;
-	m : integer := 12;
-	o : integer := 6;
-	S : integer := 24 
+	S : integer := 9 
 );	 
 
 port( 
 	RST : in std_logic; 
 	CLK : in std_logic; 
 	STF : in std_logic; 
-	X : in std_logic_vector(n-1 downto 0); 
-	A : in std_logic_vector(m-1 downto 0); 
-	C : in std_logic_vector(o-1 downto 0); 	
+	X : in std_logic_vector(9 downto 0); 
+	A : in std_logic_vector(12 downto 0); 
+	C : in std_logic_vector(5 downto 0); 	
 	EOF : out std_logic; 
-	I : out std_logic_vector(o-1 downto 0); 
-	Y : out std_logic_vector(n+1 downto 0)	--12 bits
+	I : out std_logic_vector(5 downto 0);
+	Y : out std_logic_vector(11 downto 0)
 ); 
 end component; 
 
@@ -66,7 +63,7 @@ end component;
 component registro_paralelo is
 	
 	generic(
-		n : integer := 18
+		n : integer := 10
 	);
 	
 	port(
@@ -85,7 +82,7 @@ end component;
 signal EOF : std_logic; 
 signal M,X1,X2,X3,X4 : std_logic_vector(9 downto 0); 
 signal N,I : std_logic_vector(5 downto 0); 
-signal A : std_logic_vector(11 downto 0); 
+signal A : std_logic_vector(12 downto 0); 
 
 begin 
 	
