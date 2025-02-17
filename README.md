@@ -37,4 +37,6 @@ Pensandolo bien, mejor hacemos que la cosntante sea "01" para que el filtro teng
 
 Ahora que ya qued[o un poco mas claro como se va a implementar el filtro necesito cambiar el codigo para que funcione a 10 bits de entrada y 12 de salida.
 
+en la version 1.2 traté de hacer que la mistitplicacion sea de 11 x 13 bits el bit extra de la entrada es para que simule el signo del valor de 10 bits al gunal que el nuevo bit de voeficiente, solo lo probé en el mac y parece que funciona bien, quedando a la salida los 12 bits que iran al dac, la prueba lo hice con punto flotante 2.9 para la entrada y 2.11 para la salida los coeficientes los tengo como la unidad.
+
  
