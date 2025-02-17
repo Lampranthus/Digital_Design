@@ -10,3 +10,15 @@ i<>.\src\FIR_filter.vhd
 i<>.\src\MAC.vhd
 i<>.\src\contador_adhb_n.vhd
 i<>.\src\FSM_MAC.vhd
+i<>.\src\ADC.vhd
+i<>.\src\DAC.vhd
+i<>.\src\contador_bt_k.vhd
+i<>.\src\DAC7564.vhd
+i<>.\src\fsm_DAC7564.vhd
+i<>.\src\fsm_SCLK.vhd
+i<>.\src\fsm_SPI.vhd
+i<>.\src\mux_3a1_8.vhd
+i<>.\src\mux_4a1_1.vhd
+i<>.\src\mux_10a1_1.vhd
+i<>.\src\SHR.vhd
+i<>.\src\SPI.vhd

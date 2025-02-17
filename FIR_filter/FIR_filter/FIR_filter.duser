@@ -54,7 +54,7 @@
 							<repeat_time value="0fs" enabled="false"/>
 							<cancel_time value="0fs" enabled="false"/>
 							<entries>
-								<entry value="0011000000" time="0fs"/>
+								<entry value="0001110000" time="0fs"/>
 							</entries>
 						</stimulus_data>
 						<signals>
