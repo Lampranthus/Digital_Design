@@ -6,7 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity registro_paralelo is
 	
 	generic(
-		n : integer := 18
+		n : integer := 10
 	);
 	
 	port(

@@ -6,8 +6,8 @@ use ieee.std_logic_unsigned.all;
 entity multiplicador_n_m is
 	
 	generic(
-	n : integer := 18;
-	m : integer := 36
+	n : integer := 12;
+	m : integer := 12
 	);
 	
 	port(

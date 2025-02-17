@@ -7,9 +7,9 @@ entity FIR_filter is
 	RST : in std_logic;
 	CLK : in std_logic;
 	STF : in std_logic;
-	X	: in std_logic_vector(17 downto 0);
+	X	: in std_logic_vector(9 downto 0);
 	EOP : out std_logic;
-	Y   : out std_logic_vector(17 downto 0)	
+	Y   : out std_logic_vector(11 downto 0)	
 	);	
 	
 end FIR_filter;
@@ -20,7 +20,7 @@ architecture fsm of FIR_filter is
 
 component mux_5a1_n is
 	generic(
-	n	:	integer := 18
+	n	:	integer := 10
 	);
 	port(
 	x0,x1,x2,x3,x4	: in std_logic_vector(n-1 downto 0);
@@ -34,7 +34,7 @@ end component;
 component LUT is
 port (
     F	:	in std_logic_vector(5 downto 0);
-    A	: 	out std_logic_vector(35 downto 0)
+    A	: 	out std_logic_vector(11 downto 0)
     ); 		
 end component; 
 
@@ -42,10 +42,10 @@ end component;
 
 component MAC is
 generic(
-	n : integer := 18;
-	m : integer := 36;
+	n : integer := 10;
+	m : integer := 12;
 	o : integer := 6;
-	S : integer := 34 
+	S : integer := 24 
 );	 
 
 port( 
@@ -57,7 +57,7 @@ port(
 	C : in std_logic_vector(o-1 downto 0); 	
 	EOF : out std_logic; 
 	I : out std_logic_vector(o-1 downto 0); 
-	Y : out std_logic_vector(n-1 downto 0) 
+	Y : out std_logic_vector(n+1 downto 0)	--12 bits
 ); 
 end component; 
 
@@ -83,9 +83,9 @@ end component;
 
 
 signal EOF : std_logic; 
-signal M,X1,X2,X3,X4 : std_logic_vector(17 downto 0); 
+signal M,X1,X2,X3,X4 : std_logic_vector(9 downto 0); 
 signal N,I : std_logic_vector(5 downto 0); 
-signal A : std_logic_vector(35 downto 0); 
+signal A : std_logic_vector(11 downto 0); 
 
 begin 
 	

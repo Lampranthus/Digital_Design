@@ -15,6 +15,7 @@
 						</stimulus_data>
 						<signals>
 							<signal path="/FIR_filter/RST"/>
+							<signal path="/MAC/RST"/>
 						</signals>
 					</stimulus>
 					<stimulus name="CLK" strength="default" enabled="true" type="clock">
@@ -31,6 +32,7 @@
 						</stimulus_data>
 						<signals>
 							<signal path="/FIR_filter/CLK"/>
+							<signal path="/MAC/CLK"/>
 						</signals>
 					</stimulus>
 					<stimulus name="ST" strength="default" enabled="true" type="formula">
@@ -44,6 +46,7 @@
 						</stimulus_data>
 						<signals>
 							<signal path="/FIR_filter/STF"/>
+							<signal path="/MAC/STF"/>
 						</signals>
 					</stimulus>
 					<stimulus name="X" strength="default" enabled="true" type="formula">
@@ -51,11 +54,50 @@
 							<repeat_time value="0fs" enabled="false"/>
 							<cancel_time value="0fs" enabled="false"/>
 							<entries>
-								<entry value="000100000000000000" time="0fs"/>
+								<entry value="0011000000" time="0fs"/>
 							</entries>
 						</stimulus_data>
 						<signals>
 							<signal path="/FIR_filter/X"/>
+							<signal path="/MAC/X"/>
+						</signals>
+					</stimulus>
+					<stimulus name="A" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="0100000000000" time="0fs"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/MAC/A"/>
+						</signals>
+					</stimulus>
+					<stimulus name="C" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="000100" time="0fs"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/MAC/C"/>
+						</signals>
+					</stimulus>
+					<stimulus name="S" strength="default" enabled="true" type="counter">
+						<stimulus_data>
+							<counter_type value="binary"/>
+							<direction value="up"/>
+							<radix value="decimal"/>
+							<period value="500ns"/>
+							<start_value value="0"/>
+							<modify_by_value value="1"/>
+							<is_reverse_order value="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/MAC/S"/>
 						</signals>
 					</stimulus>
 				</stimuliSet>

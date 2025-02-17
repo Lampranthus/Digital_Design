@@ -5,8 +5,8 @@ use ieee.std_logic_unsigned.all;
 
 entity registro_r is	
 	generic(
-		n : integer := 60; 
-		m : integer := 18
+		n : integer := 30; 
+		m : integer := 12
 	);	
 	port(
 		RST : in std_logic;

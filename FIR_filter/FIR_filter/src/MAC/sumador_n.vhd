@@ -5,7 +5,7 @@ use ieee.std_logic_unsigned.all;
 
 entity sumador_n is
 	generic(
-	n : integer :=60
+	n : integer :=30
 	);
 	port(
 	A :	in std_logic_vector(n-1 downto 0);

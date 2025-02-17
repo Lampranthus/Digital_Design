@@ -50,7 +50,7 @@ MAC/multiplicador_n_m.vhd=-1
 .\src\MAC\sumador_n.vhd=VHDL Source Code
 .\src\MAC\multiplicador_n_m.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=fir_filter|fsm|0
+HierarchyInformation=fir_filter|fsm|0 mac|bloques|0
 ShowHide=ShowTopLevel
 Selected=
 [Groups]
