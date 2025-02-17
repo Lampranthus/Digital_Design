@@ -20,4 +20,3 @@
 .\src\DAC\mux_10a1_1.vhd
 .\src\DAC\SHR.vhd
 .\src\DAC\SPI.vhd
-.\src\DAC\DAC.vhd

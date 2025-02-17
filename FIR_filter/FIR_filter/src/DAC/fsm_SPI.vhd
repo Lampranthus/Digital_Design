@@ -4,33 +4,26 @@ use ieee.std_logic_1164.all;
 entity fsm_SPI is
 	
 	generic(
-	
 	c : std_logic_vector := "00000001"	--ajustar a 10 MHz contar hasta 4
-	
 	);
 
 	port(
-	
-	RST,CLK : in std_logic;	
-	
+	RST		: in std_logic;
+	CLK 	: in std_logic;	
 	start 	: 	in std_logic;
 	fin 	: 	out std_logic; -- out 1
 	valido 	: 	out std_logic; -- out 2
 	CPOL 	: 	in std_logic;
 	CPHA 	: 	in std_logic;
-	
 	CS 		: 	out std_logic; -- out 3
-	
 	OP		:	out std_logic_vector(1 downto 0); -- out 4
-	
 	SELECT1	:	out std_logic_vector(3 downto 0); -- out 5
 	SELECT2	:	out std_logic_vector(1 downto 0); -- out 6
-	
 	CLR		:	out std_logic; -- out 7
 	K		:	out std_logic_vector(7 downto 0); -- out 8
 	BT		:	in	std_logic
-	
 	);
+	
 end fsm_SPI;
 
 architecture fsm of fsm_SPI is	
@@ -60,7 +53,7 @@ begin
 		end if;
 		
 		CLR <= '1';				--out 7 --no cuenta
-		K <= c;					--out 8 --24 -- sclk 1MHz 
+		K <= c;					--out 8
 		
 		if(start='1' and CPHA='1') then		--start and phase 1
 			qn <= "111111";	    --estado 1.1 phase
@@ -86,7 +79,7 @@ begin
 		
 		CLR <= '0';				--out 7 --cuenta
 
-		K <= c;					--out 8 --24 -- sclk 1MHz
+		K <= c;					--out 8
 		
 		if(BT='1') then			--BT
 			qn <= "000001";	    --siguiente estado
@@ -110,7 +103,7 @@ begin
 		
 		CLR <= '0';				--out 7 --cuenta
 
-		K <= c;	--out 8 --24 -- sclk 1MHz
+		K <= c;	--out 8
 		
 		if(BT='1') then			--BT
 			qn <= "000010";	    --siguiente estado
@@ -134,7 +127,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- no cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		qn <= "000011";	    	-- hit and run --siguiente estado
@@ -156,7 +149,7 @@ begin
 		
 		CLR <= '0';				--out 7 --cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 		if(BT='1') then			--BT
 			qn <= "000100";	    --siguiente estado
@@ -180,7 +173,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -205,7 +198,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "000110";		--hit and run -- siguiente estado
 		
@@ -225,7 +218,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -251,7 +244,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -276,7 +269,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "001001";		--hit and run -- siguiente estado
 		
@@ -296,7 +289,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -321,7 +314,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -346,7 +339,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "001100";		--hit and run -- siguiente estado
 		
@@ -366,7 +359,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8 
 		
 
 		if(BT='1') then			--BT
@@ -391,7 +384,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -416,7 +409,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "001111";		--hit and run -- siguiente estado
 		
@@ -436,7 +429,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8 
 		
 
 		if(BT='1') then			--BT
@@ -461,7 +454,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -486,7 +479,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "010010";		--hit and run -- siguiente estado
 		
@@ -506,7 +499,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -532,7 +525,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -557,7 +550,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "010101";		--hit and run -- siguiente estado
 		
@@ -577,7 +570,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -602,7 +595,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -627,7 +620,7 @@ begin
 		
 		CLR <= '0';				--out 7 --no cuenta
 
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 
 		qn <= "011000";		--hit and run -- siguiente estado
 		
@@ -647,7 +640,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(BT='1') then			--BT
@@ -673,7 +666,7 @@ begin
 		
 		CLR <= '0';				--out 7 -- no cuenta 
 		
-		K <= c;		--out 8 --24 -- sclk 1MHz
+		K <= c;		--out 8
 		
 
 		if(start='1') then			--start

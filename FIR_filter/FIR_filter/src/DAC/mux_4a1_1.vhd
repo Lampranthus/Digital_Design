@@ -6,7 +6,7 @@ entity mux_4a1_1 is
 	port(
 		BITSCLK	:	in	std_logic;
 		S		: 	in 	std_logic_vector(1 downto 0);
-		SCLK		: 	out std_logic
+		SCLK	: 	out std_logic
 	);
 end mux_4a1_1;
 

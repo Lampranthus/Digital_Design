@@ -1,14 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity fsm_SCLK
-	is
+entity fsm_SCLK is
 	port(
 	
-	RST,CLK : in std_logic;	
-	
+	RST : in std_logic;
+	CLK : in std_logic;	
 	bt	: in std_logic;
-	
 	bitsclk : out std_logic
 	
 	);

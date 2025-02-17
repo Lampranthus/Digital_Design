@@ -48,7 +48,6 @@ DAC/mux_4a1_1.vhd=-1
 DAC/mux_10a1_1.vhd=-1
 DAC/SHR.vhd=-1
 DAC/SPI.vhd=-1
-DAC/DAC.vhd=-1
 [Files.Data]
 .\src\FIR\FIR_filter.vhd=VHDL Source Code
 .\src\FIR\registro_paralelo.vhd=VHDL Source Code
@@ -80,9 +79,8 @@ DAC/DAC.vhd=-1
 .\src\DAC\mux_10a1_1.vhd=VHDL Source Code
 .\src\DAC\SHR.vhd=VHDL Source Code
 .\src\DAC\SPI.vhd=VHDL Source Code
-.\src\DAC\DAC.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=dac7564|fsm|0 fir_filter|fsm|0 mac|bloques|0
+HierarchyInformation=dac7564|fsm|0
 ShowHide=ShowTopLevel
 Selected=
 [Groups]

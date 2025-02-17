@@ -4,30 +4,22 @@ use ieee.std_logic_unsigned.all;
 
 entity DAC7564 is
 	
-	generic(
-	
+	generic(	
 	n :	integer := 12 
-	
 	);
 	
-	port(
-	
-	RST,CLK : 	in std_logic;
-	
-
+	port(	
+	RST : 	in std_logic;
+	CLK : 	in std_logic;
 	value	: 	in std_logic_vector(n-1 downto 0);
-	chan	: 	in std_logic_vector(1 downto 0);
-	
-	
+	chan	: 	in std_logic_vector(1 downto 0);	
 	start 	: 	in std_logic;
 	fin 	: 	out std_logic;
-	
 	enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
 	SCLK 	: 	out std_logic;
 	MOSI	: 	out std_logic;
-	LDAC	: 	out std_logic
-	
+	LDAC	: 	out std_logic	
 	);	
 	
 end DAC7564;
@@ -50,22 +42,17 @@ end component;
 component contador_bt_k is
 	
 	generic(
-	
 	n :	integer := 8
-
 	);
 	
 	port(
-	
-	RST,CLK : in std_logic;
-	
+	RST : in std_logic;
+	CLK : in std_logic;
 	k : in std_logic_vector(n-1 downto 0);
-	
 	CLR : in std_logic;
-	
-	BT : out std_logic
-	
+	BT : out std_logic	
 	);
+	
 end component; 
 
 component SPI is
