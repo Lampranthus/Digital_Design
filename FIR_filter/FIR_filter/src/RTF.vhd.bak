@@ -9,7 +9,7 @@ entity RTF is
 	X	: in std_logic_vector(9 downto 0);
 	CLKO : 	out std_logic;
 	STF : in std_logic;
-	--enable 	: 	out std_logic;
+	enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
 	SCLK 	: 	out std_logic;
 	MOSI	: 	out std_logic
@@ -65,11 +65,11 @@ component DAC7564 is
 	--chan	: 	in std_logic_vector(1 downto 0);	
 	start 	: 	in std_logic;
 	busy 	: 	out std_logic;
-	--enable 	: 	out std_logic;
+	enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
 	SCLK 	: 	out std_logic;
 	MOSI	: 	out std_logic	
-	);	
+	);
 end component;
 
 --------------------------------------------------------------------------------------
@@ -89,18 +89,7 @@ end component;
 
 --------------------------------------------------------------------------------------
 
-component PLL IS
-	PORT
-	(
-		inclk0		: IN STD_LOGIC  := '0';
-		c0		: OUT STD_LOGIC 
-	);
-end component; 
-
---------------------------------------------------------------------------------------	
-	
-
-signal EOP, busy, reg, STFIR, STSPI, C0: std_logic; 
+signal EOP, busy, reg, STFIR, STSPI: std_logic; 
 signal D : std_logic_vector(9 downto 0);
 signal Y : std_logic_vector(11 downto 0);
 
@@ -108,10 +97,9 @@ begin
 	
 	CLKO <= not busy;
 	
-	sc0 :  FIR_filter port map(RST,C0,STFIR,D,EOP,Y);
-	sc1 :  AD9201 port map(RST,C0,reg,X,D);
-	sc2 :  DAC7564 port map(RST,C0,Y,STSPI,busy,CS,SCLK,MOSI);
-	sc4 :  FSM_RTF port map(RST,C0,STF,EOP,busy,reg,STFIR,STSPI);
-	sc5 :  PLL port map(CLK,C0);
+	sc0 :  FIR_filter port map(RST,CLK,STFIR,D,EOP,Y);
+	sc1	:  AD9201 port map(RST,CLK,reg,X,D);
+	sc2 :  DAC7564 port map(RST,CLK,Y,STSPI,busy,enable,CS,SCLK,MOSI);
+	sc4 :  FSM_RTF port map(RST,CLK,STF,EOP,busy,reg,STFIR,STSPI);
 	
 end fsm;
