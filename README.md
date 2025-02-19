@@ -76,3 +76,7 @@ cada (1/(2 Mhz))=500ns el adc lee un dato, se lo da al filtro este lo procesa en
 
 todo est[a mal vuelve a checar los tiempos, realice una maquina de estados mejor para ocntrolar todo, mas sencillo.
 
+ya se solucionó todo al parecer, usaré un pll para alimentar la fpga con un clock de 100Mhz lo que hará que un ciclo de entrada y salida tarde 590ns, de lo unico que me precupé son los timepos, el clock con el quer alimento al adc no es simétrico, lo genera una fsm pero cumple con las caracteristicas de la hoja de datos, al igual que el spi, llego al sclock máximo de 50mhz, la hoj de datos dice que neceito un componente para lograr que funiona con esas volocidades pero lo intentaré así, todo lo demás parece funcionar correctamente, le quité la salida load del dac ya que con la configiracion será suficiente.
+
+mañana intentaré programar todo y hacerlo en físico ya que la simulacion funciona.
+
