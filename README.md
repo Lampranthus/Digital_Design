@@ -80,3 +80,6 @@ ya se solucionó todo al parecer, usaré un pll para alimentar la fpga con un cl
 
 mañana intentaré programar todo y hacerlo en físico ya que la simulacion funciona.
 
+hoy voy a utilizar una de2-115 que tiene un cyclone IV par la implementacion, empezaré por sintetiza el codigo para configurar la fpga.
+ya se hizo la sitentizacion y casi termino la conexxiones a las fpga, mañana termino de conectar y hago la primera prueba,
+
