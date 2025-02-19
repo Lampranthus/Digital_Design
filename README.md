@@ -42,6 +42,37 @@ en la version 1.2 traté de hacer que la mistitplicacion sea de 11 x 13 bits el 
 ![image](https://github.com/user-attachments/assets/0e1976b9-9b6e-4bed-83af-b5c08843dd82)
 
 el filtro con coeficientes 1 hace lo que debería de hacer. ahora falta agregar las partes del control del adc y del dac. para luego hacer una prueba fisica con esos coeficientes y porteriormente encontrar coefienstes para hacer que el filtro sea funcional. aun no se que clase de filtro será solo estpy trabaando en el firmware y la implementacion en fisico.
-
-
  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Agregué un codigo que anteriormente había realizado para el DAC que voy a utilizar para ver como funciona, me faltaría ahora hacer un codigo para el ADC solamnte y unir todo, el ADC en su hoja de datos viene este diagrama,
+
+![image](https://github.com/user-attachments/assets/55ea225a-dc44-4f3b-a52d-a0892a49ef61)
+
+donde nos dice que cuando comience la primera conversión de datos, nos tenemos que esperar 3 cliclos de reloj para que el adc nos de el primer dato, despues de los 3 ciclos ya podemos capturas los datos del adc en cualquiera de los 2 canales, estos datos estará por ende retrasados 3 ciclos de reloj. vamos a intentar hacer la captura de datos lo mas rapido posible por lo que la hora de datos nos dice que
+
+![image](https://github.com/user-attachments/assets/1503e406-820e-4802-8a35-fc974ff66d4c)
+
+el ciclo de reloj debe ser por lo menos de 45ns 22.5ns arriba y 22.5ns abajo, por lo que la frecuencia del reloj teiene que ser un maximo de 22.22..Mhz que es lo que nos dice el fabricante. usaré un reloj de 20Mhz para hacerle caso al fabricante, pero antes de eso necesito saber a que velocidad puedo escribir datos en el dac ya que si el dac no puede enviar datos tan rapido se hará un cuello de botella ya que el adc leerá mas datos que los que el adc puede escribir. pero antes de eso tengo que ver a que volocidad se harás las multiplicaciones así si yo leo un dato del adc este tiene que pasar por el filtro y luego se tiene que ecribir en el dac, creo que lo mas lento del sistema será el dac, bien, empecemos con lo que ya tenemos.
+
+numero de ciclos de reloj que le toma al filtro son 5 ciclos de reloj, despues de los primeras 5 operaciones el filtro comenzará a funcionar, el filtro tomará un dato del adc cada 5 ciclos de reloj y 5 ciclos de reloj después el dará una salida de 12 bits que el adc tendrá que recibir y escribir a su salida.
+
+para que no exista un cuello de botella a cada entrada tiene que haber una salida por lo que el tiempo que lee el adc mas el tiempo del filtro mas el tiempo de escritura nos darán el tiempo nimimo total del sistema, y su inversa la frecuencia maxima.
+
+al dac se le tienen que enviar 24 bits de los cuales 8 son de configuracion y 12 son para la salida y 3 no importan, en mi codigo le habia puesto como configuracion 00010000 este cmonado de control registra la entrada y la carga en el canal 0, me dicuenta que mi diseño anterior estaba mal en la arte de que aparte que le decia al dac con ese comando de cargara y escribiera le estaba diciendo por la entrada de load que volviera a carga, por lo que estaba cargando 2 veces.
+
+el SPI es polaridad 1, fase 0,
+
+utilizando en codigo spi que encontre en intenernet pude hacer que la escritua del dac durara 49 ciclos de reloj. por lo que será la parte mas lenta del sistema. ahora bien, recapitulando
+
+en 1 ciclo de reloj se lee un dato por el adc
+en 5 ciclos de reloj se procesa el dato y se obtiene una salida
+y en 49 ciclos de reloj se escribe una salida.
+
+en este punto si utilizo el reloj máximo para el adc de 20MHz reloj del filtro necesitoará ser 5 veces mas rapido osea 100Mhz pero el reloj del dac necesitará ser 49 veces mas rapido 980Mhz lo que es imposible ya que la transmision maxima a la que puedo enviar los bits al adc es de 50Mhz.
+
+entonces el proceso se tiene que hace tokando en cuanta la parte mas lemta, si escribo a 50Mhz redondearemos a que para ecribir cada dato el dac necesitará de 500ns por lo que el dac necesitara un reloj de 100Mhz, el reloj de fir deve ser 5 veces menos o sea 20Mhz para que en 500ns el ya tenga un resultado, m1entras que para el adc de igual forma le tiene que dar un valor al fir cada 500ns por lo que se utilizará un reloj de 2Mhz.
+
+cada (1/(2 Mhz))=500ns el adc lee un dato, se lo da al filtro este lo procesa en (5/10Mhz)=500ns y le pasa el dato al dac mietras el filtro calcula el siguiente punto, el dac tarda (50/100Mhz)=500ns es escribir el voltaje, por lo tanto el adc estaría muestreando a 2Mhz, y el dac estaría escriubiendo de igual forma a 2Mhz con un retraso de 1us que es lo que tarda e calcular lo datos y escribirlos.
+
+todo est[a mal vuelve a checar los tiempos, realice una maquina de estados mejor para ocntrolar todo, mas sencillo.
+
