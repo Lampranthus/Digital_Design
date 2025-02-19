@@ -22,3 +22,11 @@ i<>.\src\mux_4a1_1.vhd
 i<>.\src\mux_10a1_1.vhd
 i<>.\src\SHR.vhd
 i<>.\src\SPI.vhd
+i<>.\src\spi_master.vhd
+i<>.\src\RTF.vhd
+i<>.\src\Relojes.vhd
+i<>.\src\contador_bt.vhd
+i<>.\src\fsm_toggle.vhd
+i<>.\src\toggle.vhd
+i<>.\src\toggle_10ns_100ns.vhd
+i<>.\src\FSM_RTF.vhd

@@ -16,11 +16,18 @@
 						<signals>
 							<signal path="/FIR_filter/RST"/>
 							<signal path="/MAC/RST"/>
+							<signal path="/DAC7564/RST"/>
+							<signal path="/spi_master/reset_n"/>
+							<signal path="/RTF/RST"/>
+							<signal path="/toggle/RST"/>
+							<signal path="/toggle_10ns_100ns/RST"/>
+							<signal path="/toggle_10ns_500ns/RST"/>
+							<signal path="/Relojes/RST"/>
 						</signals>
 					</stimulus>
-					<stimulus name="CLK" strength="default" enabled="true" type="clock">
+					<stimulus name="CLK1" strength="default" enabled="true" type="clock">
 						<stimulus_data>
-							<period value="100ns"/>
+							<period value="20ns"/>
 							<low_value value="0"/>
 							<high_value value="1"/>
 							<starting_value value="low"/>
@@ -33,6 +40,16 @@
 						<signals>
 							<signal path="/FIR_filter/CLK"/>
 							<signal path="/MAC/CLK"/>
+							<signal path="/DAC7564/CLK"/>
+							<signal path="/spi_master/clk"/>
+							<signal path="/RTF/CLK1"/>
+							<signal path="/RTF/CLK0"/>
+							<signal path="/RTF/CLK2"/>
+							<signal path="/toggle/CLK"/>
+							<signal path="/toggle_10ns_100ns/CLK"/>
+							<signal path="/toggle_10ns_500ns/CLK"/>
+							<signal path="/Relojes/CLK1"/>
+							<signal path="/RTF/CLK"/>
 						</signals>
 					</stimulus>
 					<stimulus name="ST" strength="default" enabled="true" type="formula">
@@ -47,6 +64,9 @@
 						<signals>
 							<signal path="/FIR_filter/STF"/>
 							<signal path="/MAC/STF"/>
+							<signal path="/DAC7564/start"/>
+							<signal path="/spi_master/enable"/>
+							<signal path="/RTF/STF"/>
 						</signals>
 					</stimulus>
 					<stimulus name="X" strength="default" enabled="true" type="formula">
@@ -60,6 +80,7 @@
 						<signals>
 							<signal path="/FIR_filter/X"/>
 							<signal path="/MAC/X"/>
+							<signal path="/RTF/X"/>
 						</signals>
 					</stimulus>
 					<stimulus name="A" strength="default" enabled="true" type="formula">
@@ -99,6 +120,57 @@
 						<signals>
 							<signal path="/MAC/S"/>
 						</signals>
+					</stimulus>
+					<stimulus name="Value" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="111111000000" time="0fs"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/DAC7564/value"/>
+							<signal path="/spi_master/tx"/>
+						</signals>
+					</stimulus>
+					<stimulus name="chanel" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="00" time="0fs"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/DAC7564/chan"/>
+						</signals>
+					</stimulus>
+					<stimulus name="CLK0" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="500ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+					</stimulus>
+					<stimulus name="CLK2" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="10ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
 					</stimulus>
 				</stimuliSet>
 			</hierarchy>

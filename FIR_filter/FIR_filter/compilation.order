@@ -1,3 +1,5 @@
+.\src\RTF.vhd
+.\src\FSM_RTF.vhd
 .\src\FIR\FIR_filter.vhd
 .\src\FIR\registro_paralelo.vhd
 .\src\FIR\mux_5a1_n.vhd
@@ -9,14 +11,11 @@
 .\src\FIR\MAC\registro_ac.vhd
 .\src\FIR\MAC\sumador_n.vhd
 .\src\FIR\MAC\multiplicador_n_m.vhd
-.\src\ADC\ADC.vhd
-.\src\DAC\contador_bt_k.vhd
+.\src\ADC\AD9201.vhd
+.\src\DAC\spi_master.vhd
 .\src\DAC\DAC7564.vhd
-.\src\DAC\fsm_DAC7564.vhd
-.\src\DAC\fsm_SCLK.vhd
-.\src\DAC\fsm_SPI.vhd
-.\src\DAC\mux_3a1_8.vhd
-.\src\DAC\mux_4a1_1.vhd
-.\src\DAC\mux_10a1_1.vhd
-.\src\DAC\SHR.vhd
-.\src\DAC\SPI.vhd
+.\src\Clocks\toggle_10ns_100ns.vhd
+.\src\Clocks\toggle_10ns_500ns.vhd
+.\src\Clocks\contador_bt.vhd
+.\src\Clocks\fsm_toggle.vhd
+.\src\Clocks\Relojes.vhd

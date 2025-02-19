@@ -5,17 +5,14 @@ entity fsm_DAC7564 is
 	
 	port(
 	
-	RST,CLK : in std_logic;	
+	RST		: in std_logic;	
+	CLK		: in std_logic;	
 	--entradas
 	init	: in std_logic;							--in1
-	bt		: in std_logic;							--in2
-	valid	: in std_logic;							--in3
+	valid	: in std_logic;							--in2
 	--salidas
-	mux		: out std_logic_vector(1 downto 0);		--out1
-	start	: out std_logic;						--out2
-	ldac	: out std_logic;						--out3
-	clr		: out std_logic;						--out4
-	fin		: out std_logic							--out5
+	start	: out std_logic;						--out1
+	fin		: out std_logic							--out2
 	
 	
 	);
@@ -36,10 +33,7 @@ begin
 		--s0-- apagado
 		when "000" =>	
 		
-		mux		<= "00";			--out1 --primera palabra
 		start	<= '0';				--out2 --no trans
-		ldac	<= '0';				--out3 --no load
-		clr		<= '1';				--out4 --no cuenta
 		fin		<= '1';				--out5 --fin
 		
 		if(init='1') then
@@ -52,10 +46,7 @@ begin
 		--s1 --primera palabra
 		when "001" =>	
 		
-		mux		<= "00";			--out1 --primera palabra
 		start	<= '1';				--out2 --trans
-		ldac	<= '0';				--out3 --no load
-		clr		<= '1';				--out4 --no cuenta
 		fin		<= '0';				--out5 --no fin
 		
 		if(valid='1') then
@@ -64,59 +55,10 @@ begin
 			qn <= qp   ; --se mantiene
 		end if;
 		
-		--s2 --segunda palabra
-		when "010" =>	
-		
-		mux		<= "01";			--out1 --segunda palabra
-		start	<= '1';				--out2 --no trans
-		ldac	<= '0';				--out3 --load
-		clr		<= '1';				--out4 --no cuenta
-		fin		<= '0';				--out5 --no fin
-		
-		if(valid='1') then
-			qn <= "011"; --siguiente
-		else
-			qn <= qp   ; --se mantiene
-		end if;
-		
-		--s3-- tercera palabra 
-		when "011" =>	
-		
-		mux		<= "10";			--out1 --tercera palabra
-		start	<= '1';				--out2 --no trans
-		ldac	<= '0';				--out3 --load
-		clr		<= '1';				--out4 --no cuenta
-		fin		<= '0';				--out5 --no fin
-		
-		if(valid='1') then
-			qn <= "100"; --siguiente
-			start	<= '0';
-		else
-			qn <= qp   ; --se mantiene
-		end if;
-		
-		--s4-- 0 dac
-		when "100" =>	
-		
-		mux		<= "10";			--out1 --tercera palabra
-		start	<= '0';				--out2 --trans
-		ldac	<= '0';				--out3 --no load
-		clr		<= '0';				--out4 --cuenta
-		fin		<= '0';				--out5 --no fin
-		
-		if(bt='1') then
-			qn <= "101"; --loop
-		else
-			qn <= qp   ; --siguiente
-		end if;
-		
-		--s5-- 1 ldac
+		--s5--
 		when "101" =>	
 		
-		mux		<= "10";			--out1 --tercera palabra
 		start	<= '0';				--out2 --trans
-		ldac	<= '1';				--out3 --no load
-		clr		<= '0';				--out4 --cuenta
 		fin		<= '0';				--out5 --no fin
 		
 		if(bt='1') then
