@@ -17,7 +17,7 @@ end FSM_RTF;
 architecture fsm of FSM_RTF is	
 
 
-signal qp, qn : std_logic_vector(1 downto 0); 
+signal qp, qn : std_logic_vector(2 downto 0); 
 
 begin  
 	
@@ -27,42 +27,80 @@ begin
 		case(qp) is
 		
 		--s0
-		when "00" =>
+		when "000" =>
+		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '0';	--no spi
+		
+		if(fs='1') then
+			qn <= "001";
+		else
+			qn <= qp;
+		end if;
+		
+		--s1
+		when "001" =>
+		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '0';	--no spi
+		
+		qn <= "010"; 
+		
+		--s2
+		when "010" =>
 		
 		REG <= '1';		--registra
 		STFIR	<= '0';	--no fir
 		STSPI <= '0';	--no spi
 		
-		if(fs='1') then
-			qn <= "01";
-		else
-			qn <= qp;
-		end if;
-		
-		--s1--
-		when "01" => 
+		qn <= "011";
+
+		--s3--
+		when "011" => 
 		
 		REG <= '0';		--no registra
 		STFIR	<= '1';	--fir
 		STSPI <= '0';	--no spi
 		
+		qn <= "100";
+		
+		--s4--
+		when "100" => 
+		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '0';	--no spi
+		
 		if(EOP='1') then
-			qn <= "10";
+			qn <= "101";
 		else
 			qn <= qp;
 		end if;
 		
-		--s2--
-		when others => 
+		--s5--
+		when "101" => 
 		
 		REG <= '0';		--no registra
 		STFIR	<= '0';	--no fir
 		STSPI <= '1';	--spi
 		
-		if(busy='0') then
-			qn <= "01";
+		qn <= "110";
+		
+		--s6--
+		when others => 
+		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '0';	--spi
+		
+		if(busy='0' and fs='1') then
+			qn <= "001";
+		elsif(busy='0') then
+			qn <= "000";
 		else
-			qn <= "00";	    --regresa a s0
+			qn <= qp;	 
 		end if;
 		
 		end case;

@@ -27,7 +27,7 @@
 					</stimulus>
 					<stimulus name="CLK1" strength="default" enabled="true" type="clock">
 						<stimulus_data>
-							<period value="20ns"/>
+							<period value="10ns"/>
 							<low_value value="0"/>
 							<high_value value="1"/>
 							<starting_value value="low"/>
@@ -133,44 +133,6 @@
 							<signal path="/DAC7564/value"/>
 							<signal path="/spi_master/tx"/>
 						</signals>
-					</stimulus>
-					<stimulus name="chanel" strength="default" enabled="true" type="formula">
-						<stimulus_data>
-							<repeat_time value="0fs" enabled="false"/>
-							<cancel_time value="0fs" enabled="false"/>
-							<entries>
-								<entry value="00" time="0fs"/>
-							</entries>
-						</stimulus_data>
-						<signals>
-							<signal path="/DAC7564/chan"/>
-						</signals>
-					</stimulus>
-					<stimulus name="CLK0" strength="default" enabled="true" type="clock">
-						<stimulus_data>
-							<period value="500ns"/>
-							<low_value value="0"/>
-							<high_value value="1"/>
-							<starting_value value="low"/>
-							<duty_cycle value="50.000000"/>
-							<offset value="0fs" enabled="false"/>
-							<cancel_time value="0fs" enabled="false"/>
-							<frequency_jitter value="0fs" enabled="false"/>
-							<phase_jitter value="0fs" enabled="false"/>
-						</stimulus_data>
-					</stimulus>
-					<stimulus name="CLK2" strength="default" enabled="true" type="clock">
-						<stimulus_data>
-							<period value="10ns"/>
-							<low_value value="0"/>
-							<high_value value="1"/>
-							<starting_value value="low"/>
-							<duty_cycle value="50.000000"/>
-							<offset value="0fs" enabled="false"/>
-							<cancel_time value="0fs" enabled="false"/>
-							<frequency_jitter value="0fs" enabled="false"/>
-							<phase_jitter value="0fs" enabled="false"/>
-						</stimulus_data>
 					</stimulus>
 				</stimuliSet>
 			</hierarchy>

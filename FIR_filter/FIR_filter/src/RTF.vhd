@@ -46,8 +46,7 @@ component AD9201 is
 	CLK : 	in std_logic;
 	OPC : 	in std_logic;
 	X	: 	in std_logic_vector(n-1 downto 0);
-	D	: 	out std_logic_vector(n-1 downto 0);
-	CLKO : 	out std_logic
+	D	: 	out std_logic_vector(n-1 downto 0)
 	);			
 end component; 
 
@@ -96,8 +95,10 @@ signal Y : std_logic_vector(11 downto 0);
 
 begin 
 	
+	CLKO <= not busy;
+	
 	sc0 :  FIR_filter port map(RST,CLK,STFIR,D,EOP,Y);
-	sc1	:  AD9201 port map(RST,CLK,reg,X,D,CLKO);
+	sc1	:  AD9201 port map(RST,CLK,reg,X,D);
 	sc2 :  DAC7564 port map(RST,CLK,Y,STSPI,busy,enable,CS,SCLK,MOSI);
 	sc4 :  FSM_RTF port map(RST,CLK,STF,EOP,busy,reg,STFIR,STSPI);
 	

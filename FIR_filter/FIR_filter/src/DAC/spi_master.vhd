@@ -47,7 +47,7 @@ BEGIN
     IF(reset_n = '0') THEN        --reset everything
       busy <= '1';                
       INT_ss_n <= '1';            
-      mosi <= 'Z';                
+      mosi <= '0';                
       --rx <= (OTHERS => '0');      
       state <= init;              
 
@@ -57,7 +57,7 @@ BEGIN
         WHEN init =>					 -- bus is idle
           busy <= '0';             
           INT_ss_n <= '1'; 		  
-          mosi <= 'Z';             
+          mosi <= '1';             
    
           IF(enable = '1') THEN       		--initiate communication
             busy <= '1';             
@@ -104,7 +104,7 @@ BEGIN
           IF(clk_toggles = data_length*2 + 1) THEN   
             busy <= '0';             
             INT_ss_n <= '1';         
-            mosi <= 'Z';             
+            mosi <= '1';             
             --rx <= rxBuffer;    
             state <= init;          
           ELSE                       

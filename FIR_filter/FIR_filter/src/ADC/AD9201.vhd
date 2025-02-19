@@ -13,8 +13,7 @@ entity AD9201 is
 	CLK : 	in std_logic;
 	OPC : 	in std_logic;
 	X	: 	in std_logic_vector(n-1 downto 0);
-	D	: 	out std_logic_vector(n-1 downto 0);
-	CLKO : 	out std_logic
+	D	: 	out std_logic_vector(n-1 downto 0)
 	);	
 	
 end AD9201;
@@ -42,8 +41,6 @@ end component;
 
 
 begin 	
-	
-	CLKO <= OPC;
 	c0 :  registro_paralelo port map(RST,CLK,X,OPC,D);
 	
 end fsm;

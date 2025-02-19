@@ -20,6 +20,8 @@ fileopenfolder=C:\Users\Lampranthus\Documents\Maestría\Segundo Semestre\Diseño D
 [Files]
 /RTF.vhd=-1
 /FSM_RTF.vhd=-1
+/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\SIMU-COMPLETA.asdb=-1
+/..\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\SIMU-COMPLETA.awc=-1
 FIR/FIR_filter.vhd=-1
 FIR/registro_paralelo.vhd=-1
 FIR/mux_5a1_n.vhd=-1
@@ -58,6 +60,8 @@ Clocks/Relojes.vhd=-1
 [Files.Data]
 .\src\RTF.vhd=VHDL Source Code
 .\src\FSM_RTF.vhd=VHDL Source Code
+.\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\SIMU-COMPLETA.asdb=Accelerated Waveform File
+.\..\..\..\..\..\SegundoSemestre\DiseñoDigital\FIR_filter\FIR_filter\FIR_filter\src\SIMU-COMPLETA.awc=Accelerated Waveform Configuration
 .\src\FIR\FIR_filter.vhd=VHDL Source Code
 .\src\FIR\registro_paralelo.vhd=VHDL Source Code
 .\src\FIR\mux_5a1_n.vhd=VHDL Source Code
@@ -94,7 +98,7 @@ Clocks/Relojes.vhd=-1
 .\src\Clocks\fsm_toggle.vhd=VHDL Source Code
 .\src\Clocks\Relojes.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=dac7564|fsm|0 fir_filter|fsm|0 relojes|fsm|0 rtf|fsm|0 spi_master|behavioural|0 toggle|fsm|0 toggle_10ns_100ns|fsm|0 toggle_10ns_500ns|fsm|0
+HierarchyInformation=rtf|fsm|0
 ShowHide=ShowTopLevel
 Selected=
 [Groups]
