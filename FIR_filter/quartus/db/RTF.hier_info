@@ -14,11 +14,11 @@ X[6] => AD9201:sc1.X[6]
 X[7] => AD9201:sc1.X[7]
 X[8] => AD9201:sc1.X[8]
 X[9] => AD9201:sc1.X[9]
-CLKO << DAC7564:sc2.busy
+CLKO <= DAC7564:sc2.busy
 STF => FSM_RTF:sc4.fs
-CS << DAC7564:sc2.CS
-SCLK << DAC7564:sc2.SCLK
-MOSI << DAC7564:sc2.MOSI
+CS <= DAC7564:sc2.CS
+SCLK <= DAC7564:sc2.SCLK
+MOSI <= DAC7564:sc2.MOSI
 
 
 |RTF|FIR_filter:sc0
@@ -782,17 +782,12 @@ y[9] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RTF|FIR_filter:sc0|LUT:sc1
-F[0] => Mux0.IN36
-F[0] => Mux1.IN69
-F[1] => Mux1.IN68
-F[2] => Mux0.IN35
-F[2] => Mux1.IN67
-F[3] => Mux0.IN34
-F[3] => Mux1.IN66
-F[4] => Mux0.IN33
-F[4] => Mux1.IN65
-F[5] => Mux0.IN32
-F[5] => Mux1.IN64
+F[0] => Mux0.IN69
+F[1] => Mux0.IN68
+F[2] => Mux0.IN67
+F[3] => Mux0.IN66
+F[4] => Mux0.IN65
+F[5] => Mux0.IN64
 A[0] <= <GND>
 A[1] <= <GND>
 A[2] <= <GND>
@@ -804,8 +799,8 @@ A[7] <= <GND>
 A[8] <= <GND>
 A[9] <= <GND>
 A[10] <= <GND>
-A[11] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-A[12] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+A[11] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+A[12] <= <GND>
 
 
 |RTF|FIR_filter:sc0|MAC:sc2
