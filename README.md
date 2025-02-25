@@ -83,3 +83,17 @@ mañana intentaré programar todo y hacerlo en físico ya que la simulacion func
 hoy voy a utilizar una de2-115 que tiene un cyclone IV par la implementacion, empezaré por sintetiza el codigo para configurar la fpga.
 ya se hizo la sitentizacion y casi termino la conexxiones a las fpga, mañana termino de conectar y hago la primera prueba,
 
+el filtro ya funciona fisicamente parece que la frecuencia de muestre quedó el 1/590ns=1694915.254237288 Hz ahora bien, comenzaremos con el diseño del filtro el matlab
+utilizando la herramienta filterDesigner en matlab colocamos el tipo de filtro la frecuencia de muestre y la de corte y el tipo de filtro y le damos a diseñar filtro
+
+![image](https://github.com/user-attachments/assets/b93aa8e9-8ae2-4300-97ec-ccef00ff0740)
+
+pare que un filtro de orden 4 no funciona muy bien, intentaré cambiar a un filtro de orde 50 que es como se muestra a continuacion
+
+![image](https://github.com/user-attachments/assets/4e7c92c2-900f-4d2d-90bf-aeacaee88beb)
+
+redondee la frecuencia de muestreo en 1/600ns o 1.666666MHZ eso lo hice con las maquina de estados de del RTF, lo que paso ahora es que la entrada y la salida se desfasan.  
+
+
+
+
