@@ -83,3 +83,30 @@ mañana intentaré programar todo y hacerlo en físico ya que la simulacion func
 hoy voy a utilizar una de2-115 que tiene un cyclone IV par la implementacion, empezaré por sintetiza el codigo para configurar la fpga.
 ya se hizo la sitentizacion y casi termino la conexxiones a las fpga, mañana termino de conectar y hago la primera prueba,
 
+el filtro ya funciona fisicamente parece que la frecuencia de muestre quedó el 1/590ns=1694915.254237288 Hz ahora bien, comenzaremos con el diseño del filtro el matlab
+utilizando la herramienta filterDesigner en matlab colocamos el tipo de filtro la frecuencia de muestre y la de corte y el tipo de filtro y le damos a diseñar filtro
+
+![image](https://github.com/user-attachments/assets/b93aa8e9-8ae2-4300-97ec-ccef00ff0740)
+
+pare que un filtro de orden 4 no funciona muy bien, intentaré cambiar a un filtro de orde 50 que es como se muestra a continuacion
+
+![image](https://github.com/user-attachments/assets/4e7c92c2-900f-4d2d-90bf-aeacaee88beb)
+
+redondee la frecuencia de muestreo en 1/600ns o 1.666666MHZ eso lo hice con las maquina de estados de del RTF, lo que paso ahora es que la entrada y la salida se desfasan.  
+
+ahora bien, parece ser que necesitamos que el filtro sea de un orden muy grande, vamos a hacer el filtro de orden 100, por o que tenemos que cambiar algunas cosas, tambien necesitamos sincronizar la entrada con la toma de datos, esto lo podemos hacer con una entrada ttl tambien sacada del generador de funciones que est[e sicronizada con la entrada del adc para hacer la sincronizacion de las señales y evitar el desfase que se muestra, tambien necesitamos bajar la frecuencia de muestreo parece ser que es muy rapida, la haremos de 100khz usitlizando matlab parece que que con estos parametros los coeficientes se ven bien, ya que de otra forma los coeficientes son puros positivos lo que parecería extraño ya que el el Mac se desbordaría en algun momento ya que no se restaria ningun valor solo habria sumas,
+
+![image](https://github.com/user-attachments/assets/b5f40fa5-ad3d-4dd4-b83c-6888d1185617)
+
+me pasaron un codigo en matlab que genera el codigo vhdl para los coeficientes
+
+
+![image](https://github.com/user-attachments/assets/d83851c5-b5fa-443c-9231-03e09fd82895)
+
+mejor orden 50 mas sensillo
+
+
+
+
+
+
