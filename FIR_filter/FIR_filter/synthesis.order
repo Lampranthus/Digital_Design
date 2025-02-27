@@ -30,3 +30,4 @@ i<>.\src\fsm_toggle.vhd
 i<>.\src\toggle.vhd
 i<>.\src\toggle_10ns_100ns.vhd
 i<>.\src\FSM_RTF.vhd
+i<>.\src\contador_bt_clear.vhd

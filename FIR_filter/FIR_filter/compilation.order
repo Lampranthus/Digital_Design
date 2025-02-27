@@ -1,8 +1,9 @@
 .\src\RTF.vhd
 .\src\FSM_RTF.vhd
+.\src\contador_bt_clear.vhd
 .\src\FIR\FIR_filter.vhd
 .\src\FIR\registro_paralelo.vhd
-.\src\FIR\mux_5a1_n.vhd
+.\src\FIR\mux_51a1_n.vhd
 .\src\FIR\LUT.vhd
 .\src\FIR\MAC\MAC.vhd
 .\src\FIR\MAC\FSM_MAC.vhd

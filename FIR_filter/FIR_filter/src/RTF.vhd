@@ -9,6 +9,7 @@ entity RTF is
 	X	: in std_logic_vector(9 downto 0);
 	CLKO : 	out std_logic;
 	STF : in std_logic;
+	--TRI : in std_logic;
 	--enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
 	SCLK 	: 	out std_logic;
@@ -26,6 +27,7 @@ component FIR_filter is
 	port(	
 	RST : in std_logic;
 	CLK : in std_logic;
+	N 	: in std_logic_vector(5 downto 0); --orden
 	STF : in std_logic;
 	X	: in std_logic_vector(9 downto 0);
 	EOP : out std_logic;
@@ -81,6 +83,9 @@ component FSM_RTF is
 		fs	: in std_logic;
 		EOP : in std_logic;
 		busy: in std_logic;
+		bt	: in std_logic;
+		opc	: out std_logic;
+		CLKADC	: out std_logic;
 		REG	: out std_logic;
 		STFIR: out std_logic;
 		STSPI : out std_logic	
@@ -98,20 +103,46 @@ component PLL IS
 end component; 
 
 --------------------------------------------------------------------------------------	
+
+component contador_bt_clear is
+	
+	generic(
+	
+	n :	integer := 10;
+	c : integer := 893 --fs 100khz
+	
+	);
+	
+	port(
+	
+	RST : in std_logic;
+	CLK : in std_logic;
+	CLR : in std_logic;
+	BT : out std_logic
+	
+	);
+	
+end component;
+
+--------------------------------------------------------------------------------------	
 	
 
-signal EOP, busy, reg, STFIR, STSPI, C0: std_logic; 
+signal EOP, busy, reg, STFIR, STSPI, C0, SYNC, bt, opc: std_logic; 
 signal D : std_logic_vector(9 downto 0);
 signal Y : std_logic_vector(11 downto 0);
+signal N : std_logic_vector(5 downto 0); --orden
 
 begin 
 	
-	CLKO <= not busy;
+	N <= "110010"; 		--orden 50
 	
-	sc0 :  FIR_filter port map(RST,C0,STFIR,D,EOP,Y);
+	--SYNC <= STF and TRI; --empieza con el trigger para sincronizar la entrada con la toma de datos
+	
+	sc0 :  FIR_filter port map(RST,C0,N,STFIR,D,EOP,Y);
 	sc1 :  AD9201 port map(RST,C0,reg,X,D);
 	sc2 :  DAC7564 port map(RST,C0,Y,STSPI,busy,CS,SCLK,MOSI);
-	sc4 :  FSM_RTF port map(RST,C0,STF,EOP,busy,reg,STFIR,STSPI);
+	sc4 :  FSM_RTF port map(RST,C0,STF,EOP,busy,bt,opc,CLKO,reg,STFIR,STSPI);
 	sc5 :  PLL port map(CLK,C0);
+	sc6 :  contador_bt_clear port map(RST,C0,opc,bt);
 	
 end fsm;

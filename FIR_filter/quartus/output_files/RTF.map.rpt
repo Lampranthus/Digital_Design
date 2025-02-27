@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RTF
-Fri Feb 21 17:26:27 2025
+Wed Feb 26 16:12:42 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -20,7 +20,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  12. General Register Statistics
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Parameter Settings for User Entity Instance: FIR_filter:sc0|mux_5a1_n:sc0
+ 15. Parameter Settings for User Entity Instance: FIR_filter:sc0|mux_51a1_n:sc0
  16. Parameter Settings for User Entity Instance: FIR_filter:sc0|MAC:sc2
  17. Parameter Settings for User Entity Instance: FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1
  18. Parameter Settings for User Entity Instance: FIR_filter:sc0|MAC:sc2|sumador_n:Bloque_2
@@ -31,20 +31,67 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  23. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc4
  24. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc5
  25. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc6
- 26. Parameter Settings for User Entity Instance: AD9201:sc1
- 27. Parameter Settings for User Entity Instance: AD9201:sc1|registro_paralelo:c0
- 28. Parameter Settings for User Entity Instance: DAC7564:sc2
- 29. Parameter Settings for User Entity Instance: DAC7564:sc2|spi_master:sc0
- 30. Parameter Settings for User Entity Instance: PLL:sc5|altpll:altpll_component
- 31. Parameter Settings for Inferred Entity Instance: FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0
- 32. altpll Parameter Settings by Entity Instance
- 33. lpm_mult Parameter Settings by Entity Instance
- 34. Port Connectivity Checks: "DAC7564:sc2|spi_master:sc0"
- 35. Port Connectivity Checks: "FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4"
- 36. Port Connectivity Checks: "FIR_filter:sc0|MAC:sc2"
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
+ 26. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc7
+ 27. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc8
+ 28. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc9
+ 29. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc10
+ 30. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc11
+ 31. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc12
+ 32. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc13
+ 33. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc14
+ 34. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc15
+ 35. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc16
+ 36. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc17
+ 37. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc18
+ 38. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc19
+ 39. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc20
+ 40. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc21
+ 41. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc22
+ 42. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc23
+ 43. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc24
+ 44. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc25
+ 45. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc26
+ 46. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc27
+ 47. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc28
+ 48. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc29
+ 49. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc30
+ 50. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc31
+ 51. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc32
+ 52. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc33
+ 53. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc34
+ 54. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc35
+ 55. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc36
+ 56. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc37
+ 57. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc38
+ 58. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc39
+ 59. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc40
+ 60. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc41
+ 61. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc42
+ 62. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc43
+ 63. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc44
+ 64. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc45
+ 65. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc46
+ 66. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc47
+ 67. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc48
+ 68. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc49
+ 69. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc50
+ 70. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc51
+ 71. Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc52
+ 72. Parameter Settings for User Entity Instance: AD9201:sc1
+ 73. Parameter Settings for User Entity Instance: AD9201:sc1|registro_paralelo:c0
+ 74. Parameter Settings for User Entity Instance: DAC7564:sc2
+ 75. Parameter Settings for User Entity Instance: DAC7564:sc2|spi_master:sc0
+ 76. Parameter Settings for User Entity Instance: PLL:sc5|altpll:altpll_component
+ 77. Parameter Settings for User Entity Instance: contador_bt_clear:sc6
+ 78. Parameter Settings for Inferred Entity Instance: FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0
+ 79. altpll Parameter Settings by Entity Instance
+ 80. lpm_mult Parameter Settings by Entity Instance
+ 81. Port Connectivity Checks: "DAC7564:sc2|spi_master:sc0"
+ 82. Port Connectivity Checks: "FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4"
+ 83. Port Connectivity Checks: "FIR_filter:sc0"
+ 84. Post-Synthesis Netlist Statistics for Top Partition
+ 85. Elapsed Time Per Partition
+ 86. Analysis & Synthesis Messages
 
 
 
@@ -71,15 +118,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 21 17:26:27 2025          ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 26 16:12:42 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; RTF                                            ;
 ; Top-level Entity Name              ; RTF                                            ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 180                                            ;
-;     Total combinational functions  ; 130                                            ;
-;     Dedicated logic registers      ; 118                                            ;
-; Total registers                    ; 118                                            ;
+; Total logic elements               ; 1,025                                          ;
+;     Total combinational functions  ; 515                                            ;
+;     Dedicated logic registers      ; 601                                            ;
+; Total registers                    ; 601                                            ;
 ; Total pins                         ; 17                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -187,7 +234,14 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -196,6 +250,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                             ; Library ;
 +-------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../FIR_filter/src/contador_bt_clear.vhd         ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/contador_bt_clear.vhd         ;         ;
+; ../FIR_filter/src/FIR/mux_51a1_n.vhd            ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_51a1_n.vhd            ;         ;
 ; ../FIR_filter/src/ADC/AD9201.vhd                ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/ADC/AD9201.vhd                ;         ;
 ; ../FIR_filter/src/DAC/spi_master.vhd            ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/DAC/spi_master.vhd            ;         ;
 ; ../FIR_filter/src/DAC/DAC7564.vhd               ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/DAC/DAC7564.vhd               ;         ;
@@ -207,7 +263,6 @@ https://fpgasoftware.intel.com/eula.
 ; ../FIR_filter/src/FIR/MAC/FSM_MAC.vhd           ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/FSM_MAC.vhd           ;         ;
 ; ../FIR_filter/src/FIR/MAC/contador_cdhb_n.vhd   ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/contador_cdhb_n.vhd   ;         ;
 ; ../FIR_filter/src/FIR/registro_paralelo.vhd     ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/registro_paralelo.vhd     ;         ;
-; ../FIR_filter/src/FIR/mux_5a1_n.vhd             ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_5a1_n.vhd             ;         ;
 ; ../FIR_filter/src/FIR/LUT.vhd                   ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/LUT.vhd                   ;         ;
 ; ../FIR_filter/src/FIR/FIR_filter.vhd            ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd            ;         ;
 ; ../FIR_filter/src/RTF.vhd                       ; yes             ; User VHDL File               ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd                       ;         ;
@@ -224,7 +279,7 @@ https://fpgasoftware.intel.com/eula.
 ; multcore.inc                                    ; yes             ; Megafunction                 ; c:/intelfpga/23.1std/quartus/libraries/megafunctions/multcore.inc                                                                        ;         ;
 ; bypassff.inc                                    ; yes             ; Megafunction                 ; c:/intelfpga/23.1std/quartus/libraries/megafunctions/bypassff.inc                                                                        ;         ;
 ; altshift.inc                                    ; yes             ; Megafunction                 ; c:/intelfpga/23.1std/quartus/libraries/megafunctions/altshift.inc                                                                        ;         ;
-; db/mult_r5t.tdf                                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/db/mult_r5t.tdf                      ;         ;
+; db/mult_l4t.tdf                                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/db/mult_l4t.tdf                      ;         ;
 +-------------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -233,20 +288,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 180                                                                        ;
+; Estimated Total logic elements              ; 1,025                                                                      ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 130                                                                        ;
+; Total combinational functions               ; 515                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 41                                                                         ;
-;     -- 3 input functions                    ; 53                                                                         ;
-;     -- <=2 input functions                  ; 36                                                                         ;
+;     -- 4 input functions                    ; 386                                                                        ;
+;     -- 3 input functions                    ; 84                                                                         ;
+;     -- <=2 input functions                  ; 45                                                                         ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 111                                                                        ;
-;     -- arithmetic mode                      ; 19                                                                         ;
+;     -- normal mode                          ; 476                                                                        ;
+;     -- arithmetic mode                      ; 39                                                                         ;
 ;                                             ;                                                                            ;
-; Total registers                             ; 118                                                                        ;
-;     -- Dedicated logic registers            ; 118                                                                        ;
+; Total registers                             ; 601                                                                        ;
+;     -- Dedicated logic registers            ; 601                                                                        ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
 ; I/O pins                                    ; 17                                                                         ;
@@ -257,9 +312,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                          ;
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; PLL:sc5|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 119                                                                        ;
-; Total fan-out                               ; 845                                                                        ;
-; Average fan-out                             ; 2.96                                                                       ;
+; Maximum fan-out                             ; 602                                                                        ;
+; Total fan-out                               ; 4263                                                                       ;
+; Average fan-out                             ; 3.70                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -268,31 +323,78 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Entity Name       ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+-------------------+--------------+
-; |RTF                                     ; 130 (0)             ; 118 (0)                   ; 0           ; 2            ; 0       ; 1         ; 17   ; 0            ; |RTF                                                                                          ; RTF               ; work         ;
+; |RTF                                     ; 515 (0)             ; 601 (0)                   ; 0           ; 2            ; 0       ; 1         ; 17   ; 0            ; |RTF                                                                                          ; RTF               ; work         ;
 ;    |AD9201:sc1|                          ; 0 (0)               ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|AD9201:sc1                                                                               ; AD9201            ; work         ;
 ;       |registro_paralelo:c0|             ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|AD9201:sc1|registro_paralelo:c0                                                          ; registro_paralelo ; work         ;
-;    |DAC7564:sc2|                         ; 54 (0)              ; 37 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2                                                                              ; DAC7564           ; work         ;
-;       |spi_master:sc0|                   ; 54 (54)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2|spi_master:sc0                                                               ; spi_master        ; work         ;
-;    |FIR_filter:sc0|                      ; 70 (0)              ; 68 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0                                                                           ; FIR_filter        ; work         ;
-;       |LUT:sc1|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|LUT:sc1                                                                   ; LUT               ; work         ;
-;       |MAC:sc2|                          ; 38 (0)              ; 28 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2                                                                   ; MAC               ; work         ;
+;    |DAC7564:sc2|                         ; 49 (0)              ; 37 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2                                                                              ; DAC7564           ; work         ;
+;       |spi_master:sc0|                   ; 49 (49)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2|spi_master:sc0                                                               ; spi_master        ; work         ;
+;    |FIR_filter:sc0|                      ; 441 (0)             ; 541 (0)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0                                                                           ; FIR_filter        ; work         ;
+;       |LUT:sc1|                          ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|LUT:sc1                                                                   ; LUT               ; work         ;
+;       |MAC:sc2|                          ; 59 (0)              ; 41 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2                                                                   ; MAC               ; work         ;
 ;          |FSM_MAC:Bloque_6|              ; 4 (4)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|FSM_MAC:Bloque_6                                                  ; FSM_MAC           ; work         ;
-;          |contador_cdhb_n:Bloque_5|      ; 14 (14)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5                                          ; contador_cdhb_n   ; work         ;
+;          |contador_cdhb_n:Bloque_5|      ; 13 (13)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5                                          ; contador_cdhb_n   ; work         ;
 ;          |multiplicador_n_m:Bloque_1|    ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1                                        ; multiplicador_n_m ; work         ;
 ;             |lpm_mult:Mult0|             ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0                         ; lpm_mult          ; work         ;
-;                |mult_r5t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0|mult_r5t:auto_generated ; mult_r5t          ; work         ;
-;          |registro_ac:Bloque_3|          ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3                                              ; registro_ac       ; work         ;
-;          |registro_r:Bloque_4|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4                                               ; registro_r        ; work         ;
-;          |sumador_n:Bloque_2|            ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|sumador_n:Bloque_2                                                ; sumador_n         ; work         ;
-;       |mux_5a1_n:sc0|                    ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|mux_5a1_n:sc0                                                             ; mux_5a1_n         ; work         ;
+;                |mult_l4t:auto_generated| ; 0 (0)               ; 0 (0)                     ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0|mult_l4t:auto_generated ; mult_l4t          ; work         ;
+;          |registro_ac:Bloque_3|          ; 21 (21)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3                                              ; registro_ac       ; work         ;
+;          |registro_r:Bloque_4|           ; 0 (0)               ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4                                               ; registro_r        ; work         ;
+;          |sumador_n:Bloque_2|            ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|sumador_n:Bloque_2                                                ; sumador_n         ; work         ;
+;       |mux_51a1_n:sc0|                   ; 344 (344)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|mux_51a1_n:sc0                                                            ; mux_51a1_n        ; work         ;
+;       |registro_paralelo:sc10|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc10                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc11|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc11                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc12|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc12                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc13|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc13                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc14|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc14                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc15|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc15                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc16|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc16                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc17|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc17                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc18|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc18                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc19|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc19                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc20|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc20                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc21|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc21                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc22|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc22                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc23|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc23                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc24|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc24                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc25|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc25                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc26|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc26                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc27|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc27                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc28|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc28                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc29|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc29                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc30|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc30                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc31|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc31                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc32|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc32                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc33|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc33                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc34|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc34                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc35|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc35                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc36|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc36                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc37|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc37                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc38|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc38                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc39|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc39                                                    ; registro_paralelo ; work         ;
 ;       |registro_paralelo:sc3|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc3                                                     ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc40|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc40                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc41|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc41                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc42|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc42                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc43|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc43                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc44|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc44                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc45|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc45                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc46|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc46                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc47|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc47                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc48|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc48                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc49|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc49                                                    ; registro_paralelo ; work         ;
 ;       |registro_paralelo:sc4|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc4                                                     ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc50|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc50                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc51|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc51                                                    ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc52|           ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc52                                                    ; registro_paralelo ; work         ;
 ;       |registro_paralelo:sc5|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc5                                                     ; registro_paralelo ; work         ;
 ;       |registro_paralelo:sc6|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc6                                                     ; registro_paralelo ; work         ;
-;    |FSM_RTF:sc4|                         ; 6 (6)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FSM_RTF:sc4                                                                              ; FSM_RTF           ; work         ;
+;       |registro_paralelo:sc7|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc7                                                     ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc8|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc8                                                     ; registro_paralelo ; work         ;
+;       |registro_paralelo:sc9|            ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|registro_paralelo:sc9                                                     ; registro_paralelo ; work         ;
+;    |FSM_RTF:sc4|                         ; 11 (11)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FSM_RTF:sc4                                                                              ; FSM_RTF           ; work         ;
 ;    |PLL:sc5|                             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|PLL:sc5                                                                                  ; PLL               ; work         ;
 ;       |altpll:altpll_component|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|PLL:sc5|altpll:altpll_component                                                          ; altpll            ; work         ;
 ;          |PLL_altpll:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|PLL:sc5|altpll:altpll_component|PLL_altpll:auto_generated                                ; PLL_altpll        ; work         ;
+;    |contador_bt_clear:sc6|               ; 14 (14)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|contador_bt_clear:sc6                                                                    ; contador_bt_clear ; work         ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -332,31 +434,26 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; DAC7564:sc2|spi_master:sc0|last_bit[4]                     ; Stuck at GND due to stuck port data_in             ;
 ; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[0..8,21..29] ; Lost fanout                                        ;
 ; DAC7564:sc2|spi_master:sc0|last_bit[1..3,5]                ; Merged with DAC7564:sc2|spi_master:sc0|last_bit[0] ;
-; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[0..10]      ; Stuck at GND due to stuck port data_in             ;
-; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[9,10]        ; Stuck at GND due to stuck port data_in             ;
 ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[21..29]     ; Lost fanout                                        ;
-; Total Number of Removed Registers = 45                     ;                                                    ;
+; Total Number of Removed Registers = 32                     ;                                                    ;
 +------------------------------------------------------------+----------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                          ;
-+----------------------------------------------------+---------------------------+-----------------------------------------------------+
-; Register name                                      ; Reason for Removal        ; Registers Removed due to This Register              ;
-+----------------------------------------------------+---------------------------+-----------------------------------------------------+
-; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[29]  ; Lost Fanouts              ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[22], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[23], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[24], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[25], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[26], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[27], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[28], ;
-;                                                    ;                           ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[29]  ;
-; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[10] ; Stuck at GND              ; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[10]   ;
-;                                                    ; due to stuck port data_in ;                                                     ;
-; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[9]  ; Stuck at GND              ; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[9]    ;
-;                                                    ; due to stuck port data_in ;                                                     ;
-+----------------------------------------------------+---------------------------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                  ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
+; Register name                                     ; Reason for Removal ; Registers Removed due to This Register              ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
+; FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4|qp[29] ; Lost Fanouts       ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[29], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[28], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[27], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[26], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[25], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[24], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[23], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[22], ;
+;                                                   ;                    ; FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3|qp[21]  ;
++---------------------------------------------------+--------------------+-----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -364,12 +461,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 118   ;
-; Number of registers using Synchronous Clear  ; 6     ;
+; Total registers                              ; 601   ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 2     ;
-; Number of registers using Asynchronous Clear ; 85    ;
+; Number of registers using Asynchronous Clear ; 568   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 91    ;
+; Number of registers using Clock Enable       ; 553   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -379,8 +476,8 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; DAC7564:sc2|spi_master:sc0|busy        ; 5       ;
 ; DAC7564:sc2|spi_master:sc0|INT_ss_n    ; 2       ;
+; DAC7564:sc2|spi_master:sc0|busy        ; 2       ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
@@ -390,22 +487,22 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|txBuffer[20]               ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|txBuffer[14]               ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |RTF|FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5|qp[1] ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|clk_toggles[3]             ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |RTF|FSM_RTF:sc4|qp[1]                                     ;
-; 64:1               ; 10 bits   ; 420 LEs       ; 30 LEs               ; 390 LEs                ; No         ; |RTF|FIR_filter:sc0|mux_5a1_n:sc0|Mux3                     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |RTF|contador_bt_clear:sc6|qp[9]                           ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|txBuffer[17]               ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|txBuffer[10]               ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |RTF|FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5|qp[5] ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |RTF|DAC7564:sc2|spi_master:sc0|clk_toggles[0]             ;
+; 64:1               ; 10 bits   ; 420 LEs       ; 340 LEs              ; 80 LEs                 ; No         ; |RTF|FIR_filter:sc0|mux_51a1_n:sc0|Mux6                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_filter:sc0|mux_5a1_n:sc0 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; n              ; 10    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|mux_51a1_n:sc0 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 10    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -508,6 +605,466 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------+
 ; n              ; 10    ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc7 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc8 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc9 ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc10 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc11 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc12 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc13 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc14 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc15 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc16 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc17 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc18 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc19 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc20 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc21 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc22 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc23 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc24 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc25 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc26 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc27 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc28 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc29 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc30 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc31 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc32 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc33 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc34 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc35 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc36 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc37 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc38 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc39 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc40 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc41 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc42 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc43 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc44 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc45 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc46 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc47 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc48 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc49 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc50 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc51 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter:sc0|registro_paralelo:sc52 ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -927,6 +1484,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_bt_clear:sc6 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 10    ; Signed Integer                            ;
+; c              ; 893   ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0 ;
 +------------------------------------------------+--------------+---------------------------------------------------+
@@ -937,9 +1505,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                      ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                    ;
 ; LPM_WIDTHA                                     ; 10           ; Untyped                                           ;
-; LPM_WIDTHB                                     ; 13           ; Untyped                                           ;
-; LPM_WIDTHP                                     ; 23           ; Untyped                                           ;
-; LPM_WIDTHR                                     ; 23           ; Untyped                                           ;
+; LPM_WIDTHB                                     ; 9            ; Untyped                                           ;
+; LPM_WIDTHP                                     ; 19           ; Untyped                                           ;
+; LPM_WIDTHR                                     ; 19           ; Untyped                                           ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped                                           ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                           ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped                                           ;
@@ -954,7 +1522,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                           ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                           ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                           ;
-; CBXI_PARAMETER                                 ; mult_r5t     ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_l4t     ; Untyped                                           ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                           ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                           ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                           ;
@@ -987,8 +1555,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Number of entity instances            ; 1                                                                ;
 ; Entity Instance                       ; FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 10                                                               ;
-;     -- LPM_WIDTHB                     ; 13                                                               ;
-;     -- LPM_WIDTHP                     ; 23                                                               ;
+;     -- LPM_WIDTHB                     ; 9                                                                ;
+;     -- LPM_WIDTHP                     ; 19                                                               ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                           ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                               ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                               ;
@@ -1023,15 +1591,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "FIR_filter:sc0|MAC:sc2" ;
-+---------+-------+----------+-----------------------+
-; Port    ; Type  ; Severity ; Details               ;
-+---------+-------+----------+-----------------------+
-; c[5..3] ; Input ; Info     ; Stuck at GND          ;
-; c[1..0] ; Input ; Info     ; Stuck at GND          ;
-; c[2]    ; Input ; Info     ; Stuck at VCC          ;
-+---------+-------+----------+-----------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "FIR_filter:sc0" ;
++---------+-------+----------+---------------+
+; Port    ; Type  ; Severity ; Details       ;
++---------+-------+----------+---------------+
+; n[5..4] ; Input ; Info     ; Stuck at VCC  ;
+; n[3..2] ; Input ; Info     ; Stuck at GND  ;
+; n[1]    ; Input ; Info     ; Stuck at VCC  ;
+; n[0]    ; Input ; Info     ; Stuck at GND  ;
++---------+-------+----------+---------------+
 
 
 +-----------------------------------------------------+
@@ -1040,29 +1609,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 17                          ;
-; cycloneiii_ff         ; 118                         ;
-;     CLR               ; 24                          ;
+; cycloneiii_ff         ; 601                         ;
+;     CLR               ; 35                          ;
+;     CLR SCLR          ; 10                          ;
 ;     CLR SLD           ; 1                           ;
 ;     ENA               ; 24                          ;
-;     ENA CLR           ; 60                          ;
+;     ENA CLR           ; 522                         ;
 ;     ENA SCLR          ; 6                           ;
 ;     ENA SLD           ; 1                           ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 131                         ;
-;     arith             ; 19                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 9                           ;
-;     normal            ; 112                         ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 20                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 41                          ;
+; cycloneiii_lcell_comb ; 517                         ;
+;     arith             ; 39                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 20                          ;
+;     normal            ; 478                         ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 64                          ;
+;         4 data inputs ; 386                         ;
 ; cycloneiii_mac_mult   ; 1                           ;
 ; cycloneiii_mac_out    ; 1                           ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.89                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 4.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1071,7 +1641,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1081,10 +1651,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Feb 21 17:26:18 2025
+    Info: Processing started: Wed Feb 26 16:12:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RTF -c RTF
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/contador_bt_clear.vhd
+    Info (12022): Found design unit 1: contador_bt_clear-secuencial File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/contador_bt_clear.vhd Line: 27
+    Info (12023): Found entity 1: contador_bt_clear File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/contador_bt_clear.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fir/mux_51a1_n.vhd
+    Info (12022): Found design unit 1: mux_51a1_n-combinacional File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_51a1_n.vhd Line: 67
+    Info (12023): Found entity 1: mux_51a1_n File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_51a1_n.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/adc/ad9201.vhd
     Info (12022): Found design unit 1: AD9201-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/ADC/AD9201.vhd Line: 21
     Info (12023): Found entity 1: AD9201 File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/ADC/AD9201.vhd Line: 5
@@ -1118,41 +1694,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fir/registro_paralelo.vhd
     Info (12022): Found design unit 1: registro_paralelo-simple File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/registro_paralelo.vhd Line: 23
     Info (12023): Found entity 1: registro_paralelo File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/registro_paralelo.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fir/mux_5a1_n.vhd
-    Info (12022): Found design unit 1: mux_5a1_n-combinacional File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_5a1_n.vhd Line: 17
-    Info (12023): Found entity 1: mux_5a1_n File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/mux_5a1_n.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fir/lut.vhd
     Info (12022): Found design unit 1: LUT-tabla File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/LUT.vhd Line: 11
     Info (12023): Found entity 1: LUT File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/LUT.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fir/fir_filter.vhd
-    Info (12022): Found design unit 1: FIR_filter-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 17
+    Info (12022): Found design unit 1: FIR_filter-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 18
     Info (12023): Found entity 1: FIR_filter File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/rtf.vhd
-    Info (12022): Found design unit 1: RTF-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 20
+    Info (12022): Found design unit 1: RTF-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 21
     Info (12023): Found entity 1: RTF File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lampranthus/documents/master/segundo_semestre/digital_design/fir_filter/fir_filter/fir_filter/src/fsm_rtf.vhd
-    Info (12022): Found design unit 1: FSM_RTF-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FSM_RTF.vhd Line: 17
+    Info (12022): Found design unit 1: FSM_RTF-fsm File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FSM_RTF.vhd Line: 20
     Info (12023): Found entity 1: FSM_RTF File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FSM_RTF.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
     Info (12022): Found design unit 1: pll-SYN File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 52
     Info (12023): Found entity 1: PLL File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 43
 Info (12127): Elaborating entity "RTF" for the top level hierarchy
-Info (12128): Elaborating entity "FIR_filter" for hierarchy "FIR_filter:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 111
-Info (12128): Elaborating entity "mux_5a1_n" for hierarchy "FIR_filter:sc0|mux_5a1_n:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 92
-Info (12128): Elaborating entity "LUT" for hierarchy "FIR_filter:sc0|LUT:sc1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 93
-Info (12128): Elaborating entity "MAC" for hierarchy "FIR_filter:sc0|MAC:sc2" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 94
+Info (12128): Elaborating entity "FIR_filter" for hierarchy "FIR_filter:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 141
+Info (12128): Elaborating entity "mux_51a1_n" for hierarchy "FIR_filter:sc0|mux_51a1_n:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 142
+Info (12128): Elaborating entity "LUT" for hierarchy "FIR_filter:sc0|LUT:sc1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 143
+Info (12128): Elaborating entity "MAC" for hierarchy "FIR_filter:sc0|MAC:sc2" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 144
 Info (12128): Elaborating entity "multiplicador_n_m" for hierarchy "FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 118
 Info (12128): Elaborating entity "sumador_n" for hierarchy "FIR_filter:sc0|MAC:sc2|sumador_n:Bloque_2" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 119
 Info (12128): Elaborating entity "registro_ac" for hierarchy "FIR_filter:sc0|MAC:sc2|registro_ac:Bloque_3" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 120
 Info (12128): Elaborating entity "registro_r" for hierarchy "FIR_filter:sc0|MAC:sc2|registro_r:Bloque_4" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 121
 Info (12128): Elaborating entity "contador_cdhb_n" for hierarchy "FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 122
 Info (12128): Elaborating entity "FSM_MAC" for hierarchy "FIR_filter:sc0|MAC:sc2|FSM_MAC:Bloque_6" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/MAC/MAC.vhd Line: 123
-Info (12128): Elaborating entity "registro_paralelo" for hierarchy "FIR_filter:sc0|registro_paralelo:sc3" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 95
-Info (12128): Elaborating entity "AD9201" for hierarchy "AD9201:sc1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 112
-Info (12128): Elaborating entity "DAC7564" for hierarchy "DAC7564:sc2" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 113
+Info (12128): Elaborating entity "registro_paralelo" for hierarchy "FIR_filter:sc0|registro_paralelo:sc3" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 145
+Info (12128): Elaborating entity "AD9201" for hierarchy "AD9201:sc1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 142
+Info (12128): Elaborating entity "DAC7564" for hierarchy "DAC7564:sc2" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 143
 Info (12128): Elaborating entity "spi_master" for hierarchy "DAC7564:sc2|spi_master:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/DAC/DAC7564.vhd Line: 61
-Info (12128): Elaborating entity "FSM_RTF" for hierarchy "FSM_RTF:sc4" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 114
-Info (12128): Elaborating entity "PLL" for hierarchy "PLL:sc5" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 115
+Info (12128): Elaborating entity "FSM_RTF" for hierarchy "FSM_RTF:sc4" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 144
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:sc5" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 145
 Info (12128): Elaborating entity "altpll" for hierarchy "PLL:sc5|altpll:altpll_component" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 134
 Info (12130): Elaborated megafunction instantiation "PLL:sc5|altpll:altpll_component" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 134
 Info (12133): Instantiated megafunction "PLL:sc5|altpll:altpll_component" with the following parameter: File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 134
@@ -1213,37 +1786,38 @@ Info (12133): Instantiated megafunction "PLL:sc5|altpll:altpll_component" with t
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
     Info (12023): Found entity 1: PLL_altpll File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/db/pll_altpll.v Line: 30
 Info (12128): Elaborating entity "PLL_altpll" for hierarchy "PLL:sc5|altpll:altpll_component|PLL_altpll:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "contador_bt_clear" for hierarchy "contador_bt_clear:sc6" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 146
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|Mult0" File: c:/intelfpga/23.1std/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 651
 Info (12130): Elaborated megafunction instantiation "FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0" File: c:/intelfpga/23.1std/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 651
 Info (12133): Instantiated megafunction "FIR_filter:sc0|MAC:sc2|multiplicador_n_m:Bloque_1|lpm_mult:Mult0" with the following parameter: File: c:/intelfpga/23.1std/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 651
     Info (12134): Parameter "LPM_WIDTHA" = "10"
-    Info (12134): Parameter "LPM_WIDTHB" = "13"
-    Info (12134): Parameter "LPM_WIDTHP" = "23"
-    Info (12134): Parameter "LPM_WIDTHR" = "23"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "19"
+    Info (12134): Parameter "LPM_WIDTHR" = "19"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_r5t.tdf
-    Info (12023): Found entity 1: mult_r5t File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/db/mult_r5t.tdf Line: 29
-Info (13000): Registers with preset signals will power-up high File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/DAC/spi_master.vhd Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_l4t.tdf
+    Info (12023): Found entity 1: mult_l4t File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/db/mult_l4t.tdf Line: 29
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/DAC/spi_master.vhd Line: 47
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 27 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 211 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1058 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 191 logic cells
+    Info (21061): Implemented 1038 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4914 megabytes
-    Info: Processing ended: Fri Feb 21 17:26:27 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4930 megabytes
+    Info: Processing ended: Wed Feb 26 16:12:42 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 

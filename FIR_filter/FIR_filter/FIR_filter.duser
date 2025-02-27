@@ -23,6 +23,7 @@
 							<signal path="/toggle_10ns_100ns/RST"/>
 							<signal path="/toggle_10ns_500ns/RST"/>
 							<signal path="/Relojes/RST"/>
+							<signal path="/contador_bt_clear/RST"/>
 						</signals>
 					</stimulus>
 					<stimulus name="CLK1" strength="default" enabled="true" type="clock">
@@ -50,6 +51,7 @@
 							<signal path="/toggle_10ns_500ns/CLK"/>
 							<signal path="/Relojes/CLK1"/>
 							<signal path="/RTF/CLK"/>
+							<signal path="/contador_bt_clear/CLK"/>
 						</signals>
 					</stimulus>
 					<stimulus name="ST" strength="default" enabled="true" type="formula">
@@ -67,6 +69,8 @@
 							<signal path="/DAC7564/start"/>
 							<signal path="/spi_master/enable"/>
 							<signal path="/RTF/STF"/>
+							<signal path="/RTF/TRI"/>
+							<signal path="/contador_bt_clear/CLR"/>
 						</signals>
 					</stimulus>
 					<stimulus name="X" strength="default" enabled="true" type="formula">
@@ -132,6 +136,18 @@
 						<signals>
 							<signal path="/DAC7564/value"/>
 							<signal path="/spi_master/tx"/>
+						</signals>
+					</stimulus>
+					<stimulus name="N" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="110010" time="0fs"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/FIR_filter/N"/>
 						</signals>
 					</stimulus>
 				</stimuliSet>

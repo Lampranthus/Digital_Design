@@ -8,6 +8,9 @@ entity FSM_RTF is
 		fs	: in std_logic;
 		EOP : in std_logic;
 		busy: in std_logic;
+		bt	: in std_logic;
+		opc	: out std_logic;
+		CLKADC	: out std_logic;
 		REG	: out std_logic;
 		STFIR: out std_logic;
 		STSPI : out std_logic	
@@ -21,7 +24,7 @@ signal qp, qn : std_logic_vector(2 downto 0);
 
 begin  
 	
-	c1 : process(qp,fs,EOP,busy)
+	c1 : process(qp,fs,bt,EOP,busy)
 	begin
 		
 		case(qp) is
@@ -31,7 +34,9 @@ begin
 		
 		REG <= '0';		--no registra
 		STFIR	<= '0';	--no fir
-		STSPI <= '0';	--no spi
+		STSPI <= '0';	--no spi 
+		opc <='0'; --no bt
+		CLKADC <='0'; --no lee adc
 		
 		if(fs='1') then
 			qn <= "001";
@@ -45,59 +50,84 @@ begin
 		REG <= '0';		--no registra
 		STFIR	<= '0';	--no fir
 		STSPI <= '0';	--no spi
+		opc <='0'; -- no bt
+		CLKADC <='1'; --lee adc
 		
-		qn <= "010"; 
+		qn <= "010";
 		
 		--s2
 		when "010" =>
 		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '0';	--no spi
+		opc <='0'; --no bt
+		CLKADC <='1'; --lee adc
+		
+		qn <= "011";
+	
+		--s3
+		when "011" =>
+		
 		REG <= '1';		--registra
 		STFIR	<= '0';	--no fir
 		STSPI <= '0';	--no spi
+		opc <='1'; --bt
+		CLKADC <='1'; --lee adc
 		
-		qn <= "011";
-
-		--s3--
-		when "011" => 
+		if(bt='1') then
+			qn <= "100";
+		else
+			qn <= qp;
+		end if;	
+		
+		--s4
+		when "100" =>
 		
 		REG <= '0';		--no registra
 		STFIR	<= '1';	--fir
 		STSPI <= '0';	--no spi
+		opc <='0'; -- no bt
+		CLKADC <='0'; --no lee adc
 		
-		qn <= "100";
-		
-		--s4--
-		when "100" => 
-		
-		REG <= '0';		--no registra
-		STFIR	<= '0';	--no fir
-		STSPI <= '0';	--no spi
-		
-		if(EOP='1') then
-			qn <= "101";
-		else
-			qn <= qp;
-		end if;
-		
+		qn <= "101";
+
 		--s5--
 		when "101" => 
 		
 		REG <= '0';		--no registra
 		STFIR	<= '0';	--no fir
-		STSPI <= '1';	--spi
+		STSPI <= '0';	--no spi
+		opc <='0'; -- no bt
+		CLKADC <='0'; --no lee adc
 		
-		qn <= "110";
+		if(EOP='1') then
+			qn <= "110";
+		else
+			qn <= qp;
+		end if;
 		
 		--s6--
+		when "110" => 
+		
+		REG <= '0';		--no registra
+		STFIR	<= '0';	--no fir
+		STSPI <= '1';	--spi
+		opc <='0'; -- no bt
+		CLKADC <='0'; --no lee adc
+		
+		qn <= "111";
+		
+		--s7--
 		when others => 
 		
 		REG <= '0';		--no registra
 		STFIR	<= '0';	--no fir
 		STSPI <= '0';	--spi
+		opc <='0'; -- no bt
+		CLKADC <='0'; --no lee adc
 		
-		if(busy='0' and fs='1') then
-			qn <= "001";
-		elsif(busy='0') then
+		if(busy='0') then
 			qn <= "000";
 		else
 			qn <= qp;	 

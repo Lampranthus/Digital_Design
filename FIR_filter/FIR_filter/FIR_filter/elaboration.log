@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2025-02-18 21:03:31
+Active-HDL 15.0.261.9132 2025-02-26 13:48:17
 
 Elaboration top modules:
 Architecture                  fsm(RTF)
@@ -12,7 +12,8 @@ FIR_filter        | fsm           | fir_filter |      | 15.0.261.9132 (Windows64
 AD9201            | fsm           | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
 DAC7564           | fsm           | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
 FSM_RTF           | fsm           | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
-mux_5a1_n         | combinacional | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
+contador_bt_clear | secuencial    | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
+mux_51a1_n        | combinacional | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
 LUT               | tabla         | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
 MAC               | Bloques       | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
 registro_paralelo | simple        | fir_filter |      | 15.0.261.9132 (Windows64) | -O3
@@ -42,9 +43,3 @@ fir_filter                        | None
 ieee                              | Standard IEEE packages library
 std                               | Standard VHDL library
 --------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+rtf rtf fsm
-
-
-The performance of simulation is reduced. Version Student Edition
