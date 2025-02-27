@@ -9,7 +9,7 @@ entity RTF is
 	X	: in std_logic_vector(9 downto 0);
 	CLKO : 	out std_logic;
 	STF : in std_logic;
-	--TRI : in std_logic;
+	TRI : in std_logic;
 	--enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
 	SCLK 	: 	out std_logic;
@@ -136,12 +136,12 @@ begin
 	
 	N <= "110010"; 		--orden 50
 	
-	--SYNC <= STF and TRI; --empieza con el trigger para sincronizar la entrada con la toma de datos
+	SYNC <= STF and TRI; --empieza con el trigger para sincronizar la entrada con la toma de datos
 	
 	sc0 :  FIR_filter port map(RST,C0,N,STFIR,D,EOP,Y);
 	sc1 :  AD9201 port map(RST,C0,reg,X,D);
 	sc2 :  DAC7564 port map(RST,C0,Y,STSPI,busy,CS,SCLK,MOSI);
-	sc4 :  FSM_RTF port map(RST,C0,STF,EOP,busy,bt,opc,CLKO,reg,STFIR,STSPI);
+	sc4 :  FSM_RTF port map(RST,C0,TRI,EOP,busy,bt,opc,CLKO,reg,STFIR,STSPI);
 	sc5 :  PLL port map(CLK,C0);
 	sc6 :  contador_bt_clear port map(RST,C0,opc,bt);
 	

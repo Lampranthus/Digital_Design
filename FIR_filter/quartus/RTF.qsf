@@ -95,4 +95,5 @@ set_global_assignment -name VHDL_FILE ../FIR_filter/src/FIR/FIR_filter.vhd
 set_global_assignment -name VHDL_FILE ../FIR_filter/src/RTF.vhd
 set_global_assignment -name VHDL_FILE ../FIR_filter/src/FSM_RTF.vhd
 set_global_assignment -name QIP_FILE PLL.qip
+set_location_assignment PIN_AE24 -to TRI
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
