@@ -94,6 +94,19 @@ pare que un filtro de orden 4 no funciona muy bien, intentaré cambiar a un filt
 
 redondee la frecuencia de muestreo en 1/600ns o 1.666666MHZ eso lo hice con las maquina de estados de del RTF, lo que paso ahora es que la entrada y la salida se desfasan.  
 
+ahora bien, parece ser que necesitamos que el filtro sea de un orden muy grande, vamos a hacer el filtro de orden 100, por o que tenemos que cambiar algunas cosas, tambien necesitamos sincronizar la entrada con la toma de datos, esto lo podemos hacer con una entrada ttl tambien sacada del generador de funciones que est[e sicronizada con la entrada del adc para hacer la sincronizacion de las señales y evitar el desfase que se muestra, tambien necesitamos bajar la frecuencia de muestreo parece ser que es muy rapida, la haremos de 100khz usitlizando matlab parece que que con estos parametros los coeficientes se ven bien, ya que de otra forma los coeficientes son puros positivos lo que parecería extraño ya que el el Mac se desbordaría en algun momento ya que no se restaria ningun valor solo habria sumas,
+
+![image](https://github.com/user-attachments/assets/b5f40fa5-ad3d-4dd4-b83c-6888d1185617)
+
+me pasaron un codigo en matlab que genera el codigo vhdl para los coeficientes
+
+
+![image](https://github.com/user-attachments/assets/d83851c5-b5fa-443c-9231-03e09fd82895)
+
+mejor orden 50 mas sensillo
+
+
+
 
 
 
