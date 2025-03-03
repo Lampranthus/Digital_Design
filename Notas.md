@@ -26,7 +26,7 @@ Una vez realizada la simulación, comenzaré con la implementacion, usaré un AD
 ![image](https://github.com/user-attachments/assets/eeb7a07d-18ed-4126-b2cf-0c4f64f2b35b)
 ![image](https://github.com/user-attachments/assets/833ab65f-f47e-4f58-b23c-c99b0e13800f)
 
-ycomo salida del sistema utilizaré un DAC DAC7564
+y como salida del sistema utilizaré un DAC DAC7564
 
 ![image](https://github.com/user-attachments/assets/012550f1-02d0-409d-b64c-d92459782bb8)
 
