@@ -103,10 +103,79 @@ me pasaron un codigo en matlab que genera el codigo vhdl para los coeficientes
 
 ![image](https://github.com/user-attachments/assets/d83851c5-b5fa-443c-9231-03e09fd82895)
 
-mejor orden 50 mas sensillo
+mejor orden 50 mas sencillo.
+
+
+![arreglo experimental](https://github.com/user-attachments/assets/bb335772-1a09-4e33-9869-8cfa7c5cffdc)
 
 
 
+ya termine, dejé siempre de orden 50 y frecuencia de corte de 1khz y frecuencua de muestreso de 100khz, la frecuencia de corte se puede editar cambiando los coeficientes con el codigo de troncoso. pero si quieres cambiar la frecuenca de muestreo o el orden del filtro tendras que editar el codigo vhdl directamente ya que eso se controla mediente hardware.
+
+![image](https://github.com/user-attachments/assets/bea14dc9-ebee-41c6-8f54-80aa67ee747d)
+
+![image](https://github.com/user-attachments/assets/b471f04a-bd12-49ee-96f7-d16464f5adcd)
+
+![image](https://github.com/user-attachments/assets/4b88f134-50ef-469e-9362-6c653e439ed1)
+
+![image](https://github.com/user-attachments/assets/88d1b8cd-44c2-4668-a5b4-734e67846b42)
+
+![image](https://github.com/user-attachments/assets/09d48c07-840f-45d3-80aa-6b74d72bb5c3)
+
+![image](https://github.com/user-attachments/assets/feed5b05-aac0-47b8-859c-b903b7ecfe3c)
+
+![image](https://github.com/user-attachments/assets/79a220b7-fce7-4fc4-9556-75844b5abc4e)
+
+![image](https://github.com/user-attachments/assets/239b83bf-7bcd-48ee-aef1-70b60b90606e)
+
+estos son las caracteristicas del filtro pasa bajas, es de tipo windowod y es tipo blackman.
+
+este es el resultado de la simulacion con trigger con duty de 80% a 70Khz como se hizo tambien con el generador de funciones
+
+
+![image](https://github.com/user-attachments/assets/c944c37d-fe39-44e5-bd2c-f7e2601150ee)
+
+![712us](https://github.com/user-attachments/assets/fb0c7549-ec89-4103-88d9-b0c2a7d5bbea)
+
+en completar las 50 cuentas tarda 714us lo que concuerda con lo medido por el osciloscopio
+
+![image](https://github.com/user-attachments/assets/e9240750-7412-4061-bec1-a37c6f3153af)
+
+![14 3us](https://github.com/user-attachments/assets/9a9473ab-257f-49c3-adce-f58fde40da8d)
+
+de la misma fiorma para hacer un ciclo tada 14.3us como tambien se muestra en el scilocopio, este valor cambia con la frecuencia del trigger ya que si subiemos la freciencia del trigger la crefucnia de un solo ciclo cambia como se muestra tambien en el ociloscopio.
+
+a 90Khz
+
+
+![90kzh](https://github.com/user-attachments/assets/acdff1e8-ea3a-46ad-a341-ea7bec89bbf8)
+
+![image](https://github.com/user-attachments/assets/2f44f4f0-eab9-4323-959a-fcadd1c153bf)
+
+![500hz](https://github.com/user-attachments/assets/cf4f2411-5bd7-462d-b3c1-1f6389376080)
+
+![image](https://github.com/user-attachments/assets/bc9fc701-5c70-4f15-aa74-3c97c8d1581a)
+
+![11us](https://github.com/user-attachments/assets/feb3fb0c-086a-4565-a92e-e2903e8e8ade)
+
+esta frecuencia es la frecuencia del la señal trigger que es la que va a sincronizar la lectura del adc, cuando el trigger esta en alto se activa la lectura del adc a 100khz. y la frecuencia de este trigger se dejó en 90khz o 70khz ya que en esos valores la señal de salida del dac se mantenia establa y pero si cambiabas a valores cercanos como a 80 khz la señal de salida variaba mucho por alguna razon esto debe ser tall vez por el duty del trigger o algo parecido.
+
+atenuacion 
+
+500hz 1khz 2khz 3khz 4khz 10khz.
+
+![500hz](https://github.com/user-attachments/assets/e4c5f50d-ecd7-42b4-b43f-c879e44e7988)
+![1khz](https://github.com/user-attachments/assets/5cc480aa-647e-49a1-b4b6-531be5ba77a4)
+![2khz](https://github.com/user-attachments/assets/bbe07455-1644-41bd-ac5e-504d3023fb70)
+![3kzh](https://github.com/user-attachments/assets/0dbafc99-3730-4571-91ad-f7a710c64d91)
+![4khz](https://github.com/user-attachments/assets/306a9b2d-d685-48ce-97ae-494ac36bb92c)
+![10khz](https://github.com/user-attachments/assets/2ee11bc1-8518-4349-b98a-4270684df7fd)
+
+
+se ve qu si hay atenuancion
+
+nota el ruido que se ve de entrada es el ruido de la electronica digital misma, la alimentacion del adc es de 3.3v para la digital use la fuente de 3.3v de la fpga y para la parte analogica 3.3v de una fuente lineal, en cuento a las referencias utilikce las por defecto del dac y del adc que soy de 2.5v y 1v respectivamente. como entrada a mi sitema utilice una senoidal de 200hz de 50mv a 200mv para que funcionara correctamente. el fitro hasta este punto funciona con esos paramentros. 
 
 
 
+ 
