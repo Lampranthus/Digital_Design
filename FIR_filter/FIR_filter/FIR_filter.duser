@@ -69,7 +69,6 @@
 							<signal path="/DAC7564/start"/>
 							<signal path="/spi_master/enable"/>
 							<signal path="/RTF/STF"/>
-							<signal path="/RTF/TRI"/>
 							<signal path="/contador_bt_clear/CLR"/>
 						</signals>
 					</stimulus>
@@ -148,6 +147,22 @@
 						</stimulus_data>
 						<signals>
 							<signal path="/FIR_filter/N"/>
+						</signals>
+					</stimulus>
+					<stimulus name="tri" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="11111111ps"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="80.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/RTF/TRI"/>
 						</signals>
 					</stimulus>
 				</stimuliSet>
