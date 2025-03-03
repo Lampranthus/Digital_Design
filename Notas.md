@@ -1,4 +1,4 @@
-# notas
+# NOTAS, (estas notas estas en orden cronológico por lo que tenga cuidado si lo toma como documentación)
 
 Tomé el ejemplo del filtro FIR que vienen el el libro de electronica digital y logica programable de Troncoso.
 Edité el diseño para hacerlo más optimizado ahorrando un par de ciclos de reloj.
@@ -105,10 +105,7 @@ me pasaron un codigo en matlab que genera el codigo vhdl para los coeficientes
 
 mejor orden 50 mas sencillo. cambié la frecuencia de muetreo a 100khz con un contador bt que me ayuda a esperar 10us en cada lectura.
 
-
 ![arreglo experimental](https://github.com/user-attachments/assets/bb335772-1a09-4e33-9869-8cfa7c5cffdc)
-
-
 
 ya termine, dejé siempre de orden 50 y frecuencia de corte de 1khz y frecuencua de muestreso de 100khz, la frecuencia de corte se puede editar cambiando los coeficientes con el codigo de troncoso. pero si quieres cambiar la frecuenca de muestreo o el orden del filtro tendras que editar el codigo vhdl directamente ya que eso se controla mediente hardware.
 
@@ -147,7 +144,6 @@ de la misma fiorma para hacer un ciclo tada 14.3us como tambien se muestra en el
 
 a 90Khz
 
-
 ![90kzh](https://github.com/user-attachments/assets/acdff1e8-ea3a-46ad-a341-ea7bec89bbf8)
 
 ![image](https://github.com/user-attachments/assets/2f44f4f0-eab9-4323-959a-fcadd1c153bf)
@@ -171,16 +167,10 @@ atenuacion
 ![4khz](https://github.com/user-attachments/assets/306a9b2d-d685-48ce-97ae-494ac36bb92c)
 ![10khz](https://github.com/user-attachments/assets/2ee11bc1-8518-4349-b98a-4270684df7fd)
 
-
 se ve qu si hay atenuancion
 
 nota el ruido que se ve de entrada es el ruido de la electronica digital misma, la alimentacion del adc es de 3.3v para la digital use la fuente de 3.3v de la fpga y para la parte analogica 3.3v de una fuente lineal, en cuento a las referencias utilikce las por defecto del dac y del adc que soy de 2.5v y 1v respectivamente. como entrada a mi sitema utilice una senoidal de 200hz de 50mv a 200mv para que funcionara correctamente. el fitro hasta este punto funciona con esos paramentros. 
 
-
 esta es el rtl de mi diseño fpga final
 
 ![image](https://github.com/user-attachments/assets/bb4acbd1-4e94-4715-8d8c-ab9fa7fa6111)
-
-
-
- 
