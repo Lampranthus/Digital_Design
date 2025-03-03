@@ -1,4 +1,4 @@
-# Filtro FIR de 4 orden VHDL
+# notas
 
 Tomé el ejemplo del filtro FIR que vienen el el libro de electronica digital y logica programable de Troncoso.
 Edité el diseño para hacerlo más optimizado ahorrando un par de ciclos de reloj.
@@ -103,7 +103,7 @@ me pasaron un codigo en matlab que genera el codigo vhdl para los coeficientes
 
 ![image](https://github.com/user-attachments/assets/d83851c5-b5fa-443c-9231-03e09fd82895)
 
-mejor orden 50 mas sencillo.
+mejor orden 50 mas sencillo. cambié la frecuencia de muetreo a 100khz con un contador bt que me ayuda a esperar 10us en cada lectura.
 
 
 ![arreglo experimental](https://github.com/user-attachments/assets/bb335772-1a09-4e33-9869-8cfa7c5cffdc)
@@ -175,6 +175,11 @@ atenuacion
 se ve qu si hay atenuancion
 
 nota el ruido que se ve de entrada es el ruido de la electronica digital misma, la alimentacion del adc es de 3.3v para la digital use la fuente de 3.3v de la fpga y para la parte analogica 3.3v de una fuente lineal, en cuento a las referencias utilikce las por defecto del dac y del adc que soy de 2.5v y 1v respectivamente. como entrada a mi sitema utilice una senoidal de 200hz de 50mv a 200mv para que funcionara correctamente. el fitro hasta este punto funciona con esos paramentros. 
+
+
+esta es el rtl de mi diseño fpga final
+
+![image](https://github.com/user-attachments/assets/bb4acbd1-4e94-4715-8d8c-ab9fa7fa6111)
 
 
 
