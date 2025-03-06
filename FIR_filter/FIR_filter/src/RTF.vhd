@@ -8,7 +8,7 @@ entity RTF is
 	CLK : in std_logic;
 	X	: in std_logic_vector(9 downto 0);
 	CLKO : 	out std_logic;
-	STF : in std_logic;
+	--STF : in std_logic;
 	TRI : in std_logic;
 	--enable 	: 	out std_logic;
 	CS 		: 	out std_logic;
@@ -109,7 +109,7 @@ component contador_bt_clear is
 	generic(
 	
 	n :	integer := 10;
-	c : integer := 893 --fs 100khz
+	c : integer := 893 --fs = 100khz
 	
 	);
 	
@@ -136,7 +136,7 @@ begin
 	
 	N <= "110010"; 		--orden 50
 	
-	SYNC <= STF and TRI; --empieza con el trigger para sincronizar la entrada con la toma de datos
+	--SYNC <= STF and TRI; --empieza con el trigger para sincronizar la entrada con la toma de datos
 	
 	sc0 :  FIR_filter port map(RST,C0,N,STFIR,D,EOP,Y);
 	sc1 :  AD9201 port map(RST,C0,reg,X,D);

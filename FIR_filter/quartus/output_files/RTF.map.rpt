@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RTF
-Thu Feb 27 11:17:25 2025
+Thu Mar  6 10:50:57 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -118,16 +118,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 27 11:17:25 2025          ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar  6 10:50:57 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; RTF                                            ;
 ; Top-level Entity Name              ; RTF                                            ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 1,025                                          ;
-;     Total combinational functions  ; 515                                            ;
+; Total logic elements               ; 1,024                                          ;
+;     Total combinational functions  ; 514                                            ;
 ;     Dedicated logic registers      ; 601                                            ;
 ; Total registers                    ; 601                                            ;
-; Total pins                         ; 18                                             ;
+; Total pins                         ; 17                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 2                                              ;
@@ -288,23 +288,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,025                                                                      ;
+; Estimated Total logic elements              ; 1,024                                                                      ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 515                                                                        ;
+; Total combinational functions               ; 514                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 386                                                                        ;
-;     -- 3 input functions                    ; 84                                                                         ;
+;     -- 4 input functions                    ; 389                                                                        ;
+;     -- 3 input functions                    ; 80                                                                         ;
 ;     -- <=2 input functions                  ; 45                                                                         ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 476                                                                        ;
+;     -- normal mode                          ; 475                                                                        ;
 ;     -- arithmetic mode                      ; 39                                                                         ;
 ;                                             ;                                                                            ;
 ; Total registers                             ; 601                                                                        ;
 ;     -- Dedicated logic registers            ; 601                                                                        ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
-; I/O pins                                    ; 18                                                                         ;
+; I/O pins                                    ; 17                                                                         ;
 ;                                             ;                                                                            ;
 ; Embedded Multiplier 9-bit elements          ; 2                                                                          ;
 ;                                             ;                                                                            ;
@@ -313,8 +313,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; PLL:sc5|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 602                                                                        ;
-; Total fan-out                               ; 4264                                                                       ;
-; Average fan-out                             ; 3.69                                                                       ;
+; Total fan-out                               ; 4263                                                                       ;
+; Average fan-out                             ; 3.70                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -323,13 +323,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Entity Name       ; Library Name ;
 +------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+-------------------+--------------+
-; |RTF                                     ; 515 (0)             ; 601 (0)                   ; 0           ; 2            ; 0       ; 1         ; 18   ; 0            ; |RTF                                                                                          ; RTF               ; work         ;
+; |RTF                                     ; 514 (0)             ; 601 (0)                   ; 0           ; 2            ; 0       ; 1         ; 17   ; 0            ; |RTF                                                                                          ; RTF               ; work         ;
 ;    |AD9201:sc1|                          ; 0 (0)               ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|AD9201:sc1                                                                               ; AD9201            ; work         ;
 ;       |registro_paralelo:c0|             ; 0 (0)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|AD9201:sc1|registro_paralelo:c0                                                          ; registro_paralelo ; work         ;
 ;    |DAC7564:sc2|                         ; 49 (0)              ; 37 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2                                                                              ; DAC7564           ; work         ;
 ;       |spi_master:sc0|                   ; 49 (49)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|DAC7564:sc2|spi_master:sc0                                                               ; spi_master        ; work         ;
-;    |FIR_filter:sc0|                      ; 441 (0)             ; 541 (0)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0                                                                           ; FIR_filter        ; work         ;
-;       |LUT:sc1|                          ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|LUT:sc1                                                                   ; LUT               ; work         ;
+;    |FIR_filter:sc0|                      ; 440 (0)             ; 541 (0)                   ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0                                                                           ; FIR_filter        ; work         ;
+;       |LUT:sc1|                          ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|LUT:sc1                                                                   ; LUT               ; work         ;
 ;       |MAC:sc2|                          ; 59 (0)              ; 41 (0)                    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2                                                                   ; MAC               ; work         ;
 ;          |FSM_MAC:Bloque_6|              ; 4 (4)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|FSM_MAC:Bloque_6                                                  ; FSM_MAC           ; work         ;
 ;          |contador_cdhb_n:Bloque_5|      ; 13 (13)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RTF|FIR_filter:sc0|MAC:sc2|contador_cdhb_n:Bloque_5                                          ; contador_cdhb_n   ; work         ;
@@ -1608,7 +1608,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
+; boundary_port         ; 17                          ;
 ; cycloneiii_ff         ; 601                         ;
 ;     CLR               ; 35                          ;
 ;     CLR SCLR          ; 10                          ;
@@ -1618,15 +1618,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 6                           ;
 ;     ENA SLD           ; 1                           ;
 ;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 517                         ;
+; cycloneiii_lcell_comb ; 516                         ;
 ;     arith             ; 39                          ;
 ;         2 data inputs ; 19                          ;
 ;         3 data inputs ; 20                          ;
-;     normal            ; 478                         ;
+;     normal            ; 477                         ;
 ;         1 data inputs ; 9                           ;
 ;         2 data inputs ; 19                          ;
-;         3 data inputs ; 64                          ;
-;         4 data inputs ; 386                         ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 389                         ;
 ; cycloneiii_mac_mult   ; 1                           ;
 ; cycloneiii_mac_out    ; 1                           ;
 ; cycloneiii_pll        ; 1                           ;
@@ -1651,7 +1651,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Feb 27 11:17:16 2025
+    Info: Processing started: Thu Mar  6 10:50:48 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RTF -c RTF
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1710,7 +1710,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
     Info (12022): Found design unit 1: pll-SYN File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 52
     Info (12023): Found entity 1: PLL File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/quartus/PLL.vhd Line: 43
 Info (12127): Elaborating entity "RTF" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at RTF.vhd(130): object "SYNC" assigned a value but never read File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 130
 Info (12128): Elaborating entity "FIR_filter" for hierarchy "FIR_filter:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 141
 Info (12128): Elaborating entity "mux_51a1_n" for hierarchy "FIR_filter:sc0|mux_51a1_n:sc0" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 142
 Info (12128): Elaborating entity "LUT" for hierarchy "FIR_filter:sc0|LUT:sc1" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/FIR/FIR_filter.vhd Line: 143
@@ -1809,18 +1808,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 27 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "STF" File: C:/Users/Lampranthus/Documents/Master/Segundo_Semestre/Digital_Design/FIR_filter/FIR_filter/FIR_filter/src/RTF.vhd Line: 11
-Info (21057): Implemented 1059 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
+Info (21057): Implemented 1057 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 1038 logic cells
+    Info (21061): Implemented 1037 logic cells
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4930 megabytes
-    Info: Processing ended: Thu Feb 27 11:17:25 2025
+    Info: Processing ended: Thu Mar  6 10:50:57 2025
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 
